@@ -509,7 +509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Register
+  m_text: 'Add Child
 
 '
   m_isRightToLeft: 0

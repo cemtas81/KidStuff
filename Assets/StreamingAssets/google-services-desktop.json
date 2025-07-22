@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "884450493851",
+    "project_id": "kidstuff-68c45",
+    "storage_bucket": "kidstuff-68c45.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884450493851:android:727a4728674b1e3b268d3e",
+        "android_client_info": {
+          "package_name": "com.gorilli.KidStuff"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOYfBxEZRAvYGbsXrIBODTghqC-6vDnnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
