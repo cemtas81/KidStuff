@@ -20,7 +20,6 @@ public class ParentLoginUI : MonoBehaviour
         loginButton.onClick.AddListener(OnLoginClicked);
         feedbackText.text = "";
 
-        // Initialize Firebase
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task => {
             var status = task.Result;
             if (status == DependencyStatus.Available)
