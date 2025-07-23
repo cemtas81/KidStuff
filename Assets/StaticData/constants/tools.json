@@ -1,0 +1,4662 @@
+[
+  {
+    "id": "spoon",
+    "nameKey": "tool.spoon",
+    "category": "Kitchen"
+  },
+  {
+    "id": "fork",
+    "nameKey": "tool.fork",
+    "category": "Kitchen"
+  },
+  {
+    "id": "knife_child_safe",
+    "nameKey": "tool.knife_child_safe",
+    "category": "Kitchen"
+  },
+  {
+    "id": "plate",
+    "nameKey": "tool.plate",
+    "category": "Kitchen"
+  },
+  {
+    "id": "bowl",
+    "nameKey": "tool.bowl",
+    "category": "Kitchen"
+  },
+  {
+    "id": "cup",
+    "nameKey": "tool.cup",
+    "category": "Kitchen"
+  },
+  {
+    "id": "pot",
+    "nameKey": "tool.pot",
+    "category": "Kitchen"
+  },
+  {
+    "id": "pan",
+    "nameKey": "tool.pan",
+    "category": "Kitchen"
+  },
+  {
+    "id": "strainer",
+    "nameKey": "tool.strainer",
+    "category": "Kitchen"
+  },
+  {
+    "id": "measuring_cup",
+    "nameKey": "tool.measuring_cup",
+    "category": "Kitchen"
+  },
+  {
+    "id": "whisk",
+    "nameKey": "tool.whisk",
+    "category": "Kitchen"
+  },
+  {
+    "id": "rolling_pin",
+    "nameKey": "tool.rolling_pin",
+    "category": "Kitchen"
+  },
+  {
+    "id": "muffin_tray",
+    "nameKey": "tool.muffin_tray",
+    "category": "Kitchen"
+  },
+  {
+    "id": "cutting_board",
+    "nameKey": "tool.cutting_board",
+    "category": "Kitchen"
+  },
+  {
+    "id": "colander",
+    "nameKey": "tool.colander",
+    "category": "Kitchen"
+  },
+  {
+    "id": "funnel",
+    "nameKey": "tool.funnel",
+    "category": "Kitchen"
+  },
+  {
+    "id": "wooden_spoon",
+    "nameKey": "tool.wooden_spoon",
+    "category": "Everyday"
+  },
+  {
+    "id": "cookie_cutters",
+    "nameKey": "tool.cookie_cutters",
+    "category": "Kitchen"
+  },
+  {
+    "id": "small_bowl",
+    "nameKey": "tool.small_bowl",
+    "category": "Kitchen"
+  },
+  {
+    "id": "ingredients",
+    "nameKey": "tool.ingredients",
+    "category": "Kitchen"
+  },
+  {
+    "id": "measuring_spoons",
+    "nameKey": "tool.measuring_spoons",
+    "category": "Kitchen"
+  },
+  {
+    "id": "mixing_bowls",
+    "nameKey": "tool.mixing_bowls",
+    "category": "Kitchen"
+  },
+  {
+    "id": "spatula",
+    "nameKey": "tool.spatula",
+    "category": "Kitchen"
+  },
+  {
+    "id": "grater",
+    "nameKey": "tool.grater",
+    "category": "Kitchen"
+  },
+  {
+    "id": "vegetable_peeler_child_safe",
+    "nameKey": "tool.vegetable_peeler_child_safe",
+    "category": "Kitchen"
+  },
+  {
+    "id": "apron_child_size",
+    "nameKey": "tool.apron_child_size",
+    "category": "Kitchen"
+  },
+  {
+    "id": "oven_mitts_child_size",
+    "nameKey": "tool.oven_mitts_child_size",
+    "category": "Kitchen"
+  },
+  {
+    "id": "baking_sheet",
+    "nameKey": "tool.baking_sheet",
+    "category": "Kitchen"
+  },
+  {
+    "id": "cupcake_liners",
+    "nameKey": "tool.cupcake_liners",
+    "category": "Kitchen"
+  },
+  {
+    "id": "food_coloring",
+    "nameKey": "tool.food_coloring",
+    "category": "Kitchen"
+  },
+  {
+    "id": "flour",
+    "nameKey": "tool.flour",
+    "category": "Kitchen"
+  },
+  {
+    "id": "sugar",
+    "nameKey": "tool.sugar",
+    "category": "Kitchen"
+  },
+  {
+    "id": "eggs",
+    "nameKey": "tool.eggs",
+    "category": "Kitchen"
+  },
+  {
+    "id": "milk",
+    "nameKey": "tool.milk",
+    "category": "Kitchen"
+  },
+  {
+    "id": "fruits",
+    "nameKey": "tool.fruits",
+    "category": "Kitchen"
+  },
+  {
+    "id": "vegetables",
+    "nameKey": "tool.vegetables",
+    "category": "Kitchen"
+  },
+  {
+    "id": "plastic_knife_fork_spoon_set",
+    "nameKey": "tool.plastic_knife_fork_spoon_set",
+    "category": "Kitchen"
+  },
+  {
+    "id": "sandwich_cutters",
+    "nameKey": "tool.sandwich_cutters",
+    "category": "Kitchen"
+  },
+  {
+    "id": "juice_squeezer",
+    "nameKey": "tool.juice_squeezer",
+    "category": "Kitchen"
+  },
+  {
+    "id": "egg_slicer_child_safe",
+    "nameKey": "tool.egg_slicer_child_safe",
+    "category": "Kitchen"
+  },
+  {
+    "id": "fruit_corer_child_safe",
+    "nameKey": "tool.fruit_corer_child_safe",
+    "category": "Kitchen"
+  },
+  {
+    "id": "butter_knife_child_safe",
+    "nameKey": "tool.butter_knife_child_safe",
+    "category": "Kitchen"
+  },
+  {
+    "id": "mini_whisk",
+    "nameKey": "tool.mini_whisk",
+    "category": "Kitchen"
+  },
+  {
+    "id": "cookie_press",
+    "nameKey": "tool.cookie_press",
+    "category": "Kitchen"
+  },
+  {
+    "id": "food_mill_child_size",
+    "nameKey": "tool.food_mill_child_size",
+    "category": "Kitchen"
+  },
+  {
+    "id": "potato_masher_child_size",
+    "nameKey": "tool.potato_masher_child_size",
+    "category": "Kitchen"
+  },
+  {
+    "id": "silicone_molds_baking",
+    "nameKey": "tool.silicone_molds_baking",
+    "category": "Kitchen"
+  },
+  {
+    "id": "pastry_brush",
+    "nameKey": "tool.pastry_brush",
+    "category": "Kitchen"
+  },
+  {
+    "id": "squeeze_bottles_food",
+    "nameKey": "tool.squeeze_bottles_food",
+    "category": "Kitchen"
+  },
+  {
+    "id": "pizza_cutter_child_safe",
+    "nameKey": "tool.pizza_cutter_child_safe",
+    "category": "Kitchen"
+  },
+  {
+    "id": "nutcracker_child_safe",
+    "nameKey": "tool.nutcracker_child_safe",
+    "category": "Kitchen"
+  },
+  {
+    "id": "can_opener_child_safe",
+    "nameKey": "tool.can_opener_child_safe",
+    "category": "Kitchen"
+  },
+  {
+    "id": "chopsticks_training",
+    "nameKey": "tool.chopsticks_training",
+    "category": "Kitchen"
+  },
+  {
+    "id": "food_tongs_small",
+    "nameKey": "tool.food_tongs_small",
+    "category": "Kitchen"
+  },
+  {
+    "id": "measuring_cups_plastic",
+    "nameKey": "tool.measuring_cups_plastic",
+    "category": "Kitchen"
+  },
+  {
+    "id": "dough_cutters_various",
+    "nameKey": "tool.dough_cutters_various",
+    "category": "Kitchen"
+  },
+  {
+    "id": "icing_bags_tips",
+    "nameKey": "tool.icing_bags_tips",
+    "category": "Kitchen"
+  },
+  {
+    "id": "kids_cookbook",
+    "nameKey": "tool.kids_cookbook",
+    "category": "Kitchen"
+  },
+  {
+    "id": "paints",
+    "nameKey": "tool.paints",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "brushes",
+    "nameKey": "tool.brushes",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "crayons",
+    "nameKey": "tool.crayons",
+    "category": "Everyday"
+  },
+  {
+    "id": "markers",
+    "nameKey": "tool.markers",
+    "category": "Art"
+  },
+  {
+    "id": "paper",
+    "nameKey": "tool.paper",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "cardboard_sheets",
+    "nameKey": "tool.cardboard_sheets",
+    "category": "Everyday"
+  },
+  {
+    "id": "scissors_child_safe",
+    "nameKey": "tool.scissors_child_safe",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "glue_stick",
+    "nameKey": "tool.glue_stick",
+    "category": "Creative"
+  },
+  {
+    "id": "stickers",
+    "nameKey": "tool.stickers",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "glitter",
+    "nameKey": "tool.glitter",
+    "category": "Art"
+  },
+  {
+    "id": "fabric_scraps",
+    "nameKey": "tool.fabric_scraps",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "yarn",
+    "nameKey": "tool.yarn",
+    "category": "Art"
+  },
+  {
+    "id": "decorations",
+    "nameKey": "tool.decorations",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "smock",
+    "nameKey": "tool.smock",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "playdough_or_clay",
+    "nameKey": "tool.playdough_or_clay",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "salt",
+    "nameKey": "tool.salt",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "cotton_swabs",
+    "nameKey": "tool.cotton_swabs",
+    "category": "Everyday"
+  },
+  {
+    "id": "used_wrapping_paper",
+    "nameKey": "tool.used_wrapping_paper",
+    "category": "Everyday"
+  },
+  {
+    "id": "paper_scraps",
+    "nameKey": "tool.paper_scraps",
+    "category": "Everyday"
+  },
+  {
+    "id": "old_paint_brush",
+    "nameKey": "tool.old_paint_brush",
+    "category": "Everyday"
+  },
+  {
+    "id": "easel",
+    "nameKey": "tool.easel",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "canvas",
+    "nameKey": "tool.canvas",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "stencils",
+    "nameKey": "tool.stencils",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "specialty_art_sets",
+    "nameKey": "tool.specialty_art_sets",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "colored_pencils",
+    "nameKey": "tool.colored_pencils",
+    "category": "Art"
+  },
+  {
+    "id": "pastels",
+    "nameKey": "tool.pastels",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "watercolor_paints",
+    "nameKey": "tool.watercolor_paints",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "paint_palettes",
+    "nameKey": "tool.paint_palettes",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "modeling_clay_various_types",
+    "nameKey": "tool.modeling_clay_various_types",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "pipe_cleaners",
+    "nameKey": "tool.pipe_cleaners",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "googly_eyes",
+    "nameKey": "tool.googly_eyes",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "pom_poms",
+    "nameKey": "tool.pom_poms",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "feathers",
+    "nameKey": "tool.feathers",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "sequins",
+    "nameKey": "tool.sequins",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "glitter_glue",
+    "nameKey": "tool.glitter_glue",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "craft_sticks",
+    "nameKey": "tool.craft_sticks",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "buttons_craft",
+    "nameKey": "tool.buttons_craft",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "string_craft",
+    "nameKey": "tool.string_craft",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "beads_craft_small",
+    "nameKey": "tool.beads_craft_small",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "bead_stringing_thread",
+    "nameKey": "tool.bead_stringing_thread",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "stamps_ink_pads",
+    "nameKey": "tool.stamps_ink_pads",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "construction_paper_various_colors",
+    "nameKey": "tool.construction_paper_various_colors",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "drawing_paper_large_roll",
+    "nameKey": "tool.drawing_paper_large_roll",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "coloring_books",
+    "nameKey": "tool.coloring_books",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "activity_books",
+    "nameKey": "tool.activity_books",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "easel_paper_roll",
+    "nameKey": "tool.easel_paper_roll",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "cork_board",
+    "nameKey": "tool.cork_board",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "push_pins_supervised",
+    "nameKey": "tool.push_pins_supervised",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "craft_scissors_fancy_edges",
+    "nameKey": "tool.craft_scissors_fancy_edges",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "hole_punch",
+    "nameKey": "tool.hole_punch",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "stapler_child_safe",
+    "nameKey": "tool.stapler_child_safe",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "glue_liquid",
+    "nameKey": "tool.glue_liquid",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "tape_various_types",
+    "nameKey": "tool.tape_various_types",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "scrapbook_materials",
+    "nameKey": "tool.scrapbook_materials",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "photo_paper",
+    "nameKey": "tool.photo_paper",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "charcoal_pencils",
+    "nameKey": "tool.charcoal_pencils",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "erasers_art",
+    "nameKey": "tool.erasers_art",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "craft_glue_gun_adult_supervised",
+    "nameKey": "tool.craft_glue_gun_adult_supervised",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "clay_tools",
+    "nameKey": "tool.clay_tools",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "paint_sprayer_kids",
+    "nameKey": "tool.paint_sprayer_kids",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "oil_pastels",
+    "nameKey": "tool.oil_pastels",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "chalk_pastels",
+    "nameKey": "tool.chalk_pastels",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "fabric_markers",
+    "nameKey": "tool.fabric_markers",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "glass_paint",
+    "nameKey": "tool.glass_paint",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "ceramic_paint",
+    "nameKey": "tool.ceramic_paint",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "wood_stains_child_safe",
+    "nameKey": "tool.wood_stains_child_safe",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "sponge_painters",
+    "nameKey": "tool.sponge_painters",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "paint_rollers_mini",
+    "nameKey": "tool.paint_rollers_mini",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "stamping_ink_pads_various_colors",
+    "nameKey": "tool.stamping_ink_pads_various_colors",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "craft_punches_various_shapes",
+    "nameKey": "tool.craft_punches_various_shapes",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "embossing_folders",
+    "nameKey": "tool.embossing_folders",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "origami_paper_patterns",
+    "nameKey": "tool.origami_paper_patterns",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "washi_tape_various",
+    "nameKey": "tool.washi_tape_various",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "glitter_shakers",
+    "nameKey": "tool.glitter_shakers",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "liquid_watercolors",
+    "nameKey": "tool.liquid_watercolors",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "india_ink",
+    "nameKey": "tool.india_ink",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "calligraphy_pens_kids",
+    "nameKey": "tool.calligraphy_pens_kids",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "charcoal_drawing_set",
+    "nameKey": "tool.charcoal_drawing_set",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "fixative_spray_adult_supervised",
+    "nameKey": "tool.fixative_spray_adult_supervised",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "easel_clips",
+    "nameKey": "tool.easel_clips",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "art_portfolio",
+    "nameKey": "tool.art_portfolio",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "sketch_books_various_sizes",
+    "nameKey": "tool.sketch_books_various_sizes",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "canvas_boards",
+    "nameKey": "tool.canvas_boards",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "stretch_canvas",
+    "nameKey": "tool.stretch_canvas",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "pottery_clay_kiln_fire",
+    "nameKey": "tool.pottery_clay_kiln_fire",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "sculpting_tools_advanced",
+    "nameKey": "tool.sculpting_tools_advanced",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "etching_tools_child_safe",
+    "nameKey": "tool.etching_tools_child_safe",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "printmaking_block_set",
+    "nameKey": "tool.printmaking_block_set",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "gel_pens",
+    "nameKey": "tool.gel_pens",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "metallic_markers",
+    "nameKey": "tool.metallic_markers",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "glow_in_dark_paint",
+    "nameKey": "tool.glow_in_dark_paint",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "UV_reactive_paint",
+    "nameKey": "tool.UV_reactive_paint",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "temporary_tattoos_kits",
+    "nameKey": "tool.temporary_tattoos_kits",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "tie_dye_kit",
+    "nameKey": "tool.tie_dye_kit",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "fabric_paint",
+    "nameKey": "tool.fabric_paint",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "silk_painting_kit",
+    "nameKey": "tool.silk_painting_kit",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "jewelry_making_kit_child",
+    "nameKey": "tool.jewelry_making_kit_child",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "friendship_bracelet_kit",
+    "nameKey": "tool.friendship_bracelet_kit",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "loom_bands",
+    "nameKey": "tool.loom_bands",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "sewing_kit_child_safe",
+    "nameKey": "tool.sewing_kit_child_safe",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "cross_stitch_kit_child",
+    "nameKey": "tool.cross_stitch_kit_child",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "knitting_needles_child",
+    "nameKey": "tool.knitting_needles_child",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "crochet_hooks_child",
+    "nameKey": "tool.crochet_hooks_child",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "felting_needles_adult_supervised",
+    "nameKey": "tool.felting_needles_adult_supervised",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "wool_roving",
+    "nameKey": "tool.wool_roving",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "macrame_cord",
+    "nameKey": "tool.macrame_cord",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "pom_pom_makers",
+    "nameKey": "tool.pom_pom_makers",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "tassel_makers",
+    "nameKey": "tool.tassel_makers",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "cricut_machine_adult_supervised",
+    "nameKey": "tool.cricut_machine_adult_supervised",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "heat_press_adult_supervised",
+    "nameKey": "tool.heat_press_adult_supervised",
+    "category": "Art_Craft"
+  },
+  {
+    "id": "blocks",
+    "nameKey": "tool.blocks",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "small_toys",
+    "nameKey": "tool.small_toys",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_train_set",
+    "nameKey": "tool.toy_train_set",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_food",
+    "nameKey": "tool.toy_food",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_kitchen_set",
+    "nameKey": "tool.toy_kitchen_set",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "stuffed_animals",
+    "nameKey": "tool.stuffed_animals",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_cars_trucks",
+    "nameKey": "tool.toy_cars_trucks",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "puzzle",
+    "nameKey": "tool.puzzle",
+    "category": "Toys"
+  },
+  {
+    "id": "playing_cards",
+    "nameKey": "tool.playing_cards",
+    "category": "Everyday"
+  },
+  {
+    "id": "ball",
+    "nameKey": "tool.ball",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "ball_drop_toy",
+    "nameKey": "tool.ball_drop_toy",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "ropes",
+    "nameKey": "tool.ropes",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "props",
+    "nameKey": "tool.props",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "beads_large",
+    "nameKey": "tool.beads_large",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "balloons",
+    "nameKey": "tool.balloons",
+    "category": "Celebration"
+  },
+  {
+    "id": "board_games",
+    "nameKey": "tool.board_games",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "costume_clothes",
+    "nameKey": "tool.costume_clothes",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "dolls_action_figures",
+    "nameKey": "tool.dolls_action_figures",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "duplo_blocks",
+    "nameKey": "tool.duplo_blocks",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "lego_bricks",
+    "nameKey": "tool.lego_bricks",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "magnetic_tiles",
+    "nameKey": "tool.magnetic_tiles",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "interlocking_gears",
+    "nameKey": "tool.interlocking_gears",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "marbles",
+    "nameKey": "tool.marbles",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_animals_farm_zoo",
+    "nameKey": "tool.toy_animals_farm_zoo",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_vehicles_construction_emergency",
+    "nameKey": "tool.toy_vehicles_construction_emergency",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "dollhouse",
+    "nameKey": "tool.dollhouse",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "dolls_accessories",
+    "nameKey": "tool.dolls_accessories",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_figures_action_adventure",
+    "nameKey": "tool.toy_figures_action_adventure",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "play_tools_set",
+    "nameKey": "tool.play_tools_set",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "doctor_kit_toy",
+    "nameKey": "tool.doctor_kit_toy",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "supermarket_play_set",
+    "nameKey": "tool.supermarket_play_set",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "train_tracks_additional",
+    "nameKey": "tool.train_tracks_additional",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_cars_large",
+    "nameKey": "tool.toy_cars_large",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_boats",
+    "nameKey": "tool.toy_boats",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_airplanes",
+    "nameKey": "tool.toy_airplanes",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_garage",
+    "nameKey": "tool.toy_garage",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "car_mat_play",
+    "nameKey": "tool.car_mat_play",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "play_tunnel",
+    "nameKey": "tool.play_tunnel",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "pop_up_tent",
+    "nameKey": "tool.pop_up_tent",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "dress_up_costumes_various",
+    "nameKey": "tool.dress_up_costumes_various",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "puppet_theater",
+    "nameKey": "tool.puppet_theater",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "hand_puppets",
+    "nameKey": "tool.hand_puppets",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "finger_puppets",
+    "nameKey": "tool.finger_puppets",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "building_straws",
+    "nameKey": "tool.building_straws",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "dominoes",
+    "nameKey": "tool.dominoes",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "jenga",
+    "nameKey": "tool.jenga",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "connect_four",
+    "nameKey": "tool.connect_four",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "checkers_chess_child_version",
+    "nameKey": "tool.checkers_chess_child_version",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "card_game_uno",
+    "nameKey": "tool.card_game_uno",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "puzzles_large_piece",
+    "nameKey": "tool.puzzles_large_piece",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "puzzles_floor",
+    "nameKey": "tool.puzzles_floor",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "shape_sorter_toy",
+    "nameKey": "tool.shape_sorter_toy",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "stacking_cups_rings",
+    "nameKey": "tool.stacking_cups_rings",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "nesting_dolls",
+    "nameKey": "tool.nesting_dolls",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_cash_register",
+    "nameKey": "tool.toy_cash_register",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_vacuum_cleaner",
+    "nameKey": "tool.toy_vacuum_cleaner",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_mop_bucket",
+    "nameKey": "tool.toy_mop_bucket",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "play_silk",
+    "nameKey": "tool.play_silk",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "k_nex",
+    "nameKey": "tool.k_nex",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "tinker_toys",
+    "nameKey": "tool.tinker_toys",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "lincoln_logs",
+    "nameKey": "tool.lincoln_logs",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "wooden_train_tracks_various_sets",
+    "nameKey": "tool.wooden_train_tracks_various_sets",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "marble_run_set",
+    "nameKey": "tool.marble_run_set",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "geodesic_dome_kit_kids",
+    "nameKey": "tool.geodesic_dome_kit_kids",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "fort_building_kit_specific",
+    "nameKey": "tool.fort_building_kit_specific",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "dress_up_shoes_hats",
+    "nameKey": "tool.dress_up_shoes_hats",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "play_kitchen_accessories_specific",
+    "nameKey": "tool.play_kitchen_accessories_specific",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_laundry_machine",
+    "nameKey": "tool.toy_laundry_machine",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "toy_tools_specific_drills_saws",
+    "nameKey": "tool.toy_tools_specific_drills_saws",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "remote_control_vehicles",
+    "nameKey": "tool.remote_control_vehicles",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "drone_for_kids",
+    "nameKey": "tool.drone_for_kids",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "action_figure_playsets",
+    "nameKey": "tool.action_figure_playsets",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "barbie_dolls_accessories",
+    "nameKey": "tool.barbie_dolls_accessories",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "baby_dolls_accessories",
+    "nameKey": "tool.baby_dolls_accessories",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "animal_habitat_toys",
+    "nameKey": "tool.animal_habitat_toys",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "dinosaur_dig_kit",
+    "nameKey": "tool.dinosaur_dig_kit",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "fossil_kit",
+    "nameKey": "tool.fossil_kit",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "rock_tumbler_child_safe",
+    "nameKey": "tool.rock_tumbler_child_safe",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "gemstone_collection_kit",
+    "nameKey": "tool.gemstone_collection_kit",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "robot_figurine",
+    "nameKey": "tool.robot_figurine",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "transformer_toys",
+    "nameKey": "tool.transformer_toys",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "playmobil_sets",
+    "nameKey": "tool.playmobil_sets",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "sylvanian_families_sets",
+    "nameKey": "tool.sylvanian_families_sets",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "calico_critters_sets",
+    "nameKey": "tool.calico_critters_sets",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "train_tables",
+    "nameKey": "tool.train_tables",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "car_track_systems",
+    "nameKey": "tool.car_track_systems",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "race_car_set_slot",
+    "nameKey": "tool.race_car_set_slot",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "magic_kit_for_kids",
+    "nameKey": "tool.magic_kit_for_kids",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "science_magic_kit",
+    "nameKey": "tool.science_magic_kit",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "puppet_making_kit",
+    "nameKey": "tool.puppet_making_kit",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "storytelling_cards_toy",
+    "nameKey": "tool.storytelling_cards_toy",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "board_game_extensions",
+    "nameKey": "tool.board_game_extensions",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "card_game_collectible",
+    "nameKey": "tool.card_game_collectible",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "chess_set_tournament_size",
+    "nameKey": "tool.chess_set_tournament_size",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "dominoes_mexican_train",
+    "nameKey": "tool.dominoes_mexican_train",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "bingo_set_kids",
+    "nameKey": "tool.bingo_set_kids",
+    "category": "Play_Materials"
+  },
+  {
+    "id": "picture_books",
+    "nameKey": "tool.picture_books",
+    "category": "Learning"
+  },
+  {
+    "id": "magnetic_letters_numbers",
+    "nameKey": "tool.magnetic_letters_numbers",
+    "category": "Learning"
+  },
+  {
+    "id": "scavenger_hunt_list",
+    "nameKey": "tool.scavenger_hunt_list",
+    "category": "Learning"
+  },
+  {
+    "id": "matching_cards",
+    "nameKey": "tool.matching_cards",
+    "category": "Learning"
+  },
+  {
+    "id": "farm_playmat",
+    "nameKey": "tool.farm_playmat",
+    "category": "Learning"
+  },
+  {
+    "id": "magnifying_glass",
+    "nameKey": "tool.magnifying_glass",
+    "category": "STEM"
+  },
+  {
+    "id": "color_sample_card",
+    "nameKey": "tool.color_sample_card",
+    "category": "Everyday"
+  },
+  {
+    "id": "globe_map",
+    "nameKey": "tool.globe_map",
+    "category": "Learning"
+  },
+  {
+    "id": "flashcards_letters_numbers_shapes",
+    "nameKey": "tool.flashcards_letters_numbers_shapes",
+    "category": "Learning"
+  },
+  {
+    "id": "alphabet_blocks",
+    "nameKey": "tool.alphabet_blocks",
+    "category": "STEM"
+  },
+  {
+    "id": "number_blocks",
+    "nameKey": "tool.number_blocks",
+    "category": "Learning"
+  },
+  {
+    "id": "counting_bears_counters",
+    "nameKey": "tool.counting_bears_counters",
+    "category": "Learning"
+  },
+  {
+    "id": "abacus",
+    "nameKey": "tool.abacus",
+    "category": "Learning"
+  },
+  {
+    "id": "geoboard",
+    "nameKey": "tool.geoboard",
+    "category": "Learning"
+  },
+  {
+    "id": "tangrams",
+    "nameKey": "tool.tangrams",
+    "category": "Learning"
+  },
+  {
+    "id": "pattern_blocks",
+    "nameKey": "tool.pattern_blocks",
+    "category": "Learning"
+  },
+  {
+    "id": "learning_clock",
+    "nameKey": "tool.learning_clock",
+    "category": "Learning"
+  },
+  {
+    "id": "calendar_toy",
+    "nameKey": "tool.calendar_toy",
+    "category": "Learning"
+  },
+  {
+    "id": "sight_word_cards",
+    "nameKey": "tool.sight_word_cards",
+    "category": "Learning"
+  },
+  {
+    "id": "phonics_toys",
+    "nameKey": "tool.phonics_toys",
+    "category": "Learning"
+  },
+  {
+    "id": "educational_tablet_specific_kids",
+    "nameKey": "tool.educational_tablet_specific_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "science_books_for_kids",
+    "nameKey": "tool.science_books_for_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "world_atlas_for_kids",
+    "nameKey": "tool.world_atlas_for_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "human_anatomy_model_kids",
+    "nameKey": "tool.human_anatomy_model_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "animal_figures_realistic",
+    "nameKey": "tool.animal_figures_realistic",
+    "category": "Learning"
+  },
+  {
+    "id": "dinosaur_figures",
+    "nameKey": "tool.dinosaur_figures",
+    "category": "Toys"
+  },
+  {
+    "id": "solar_system_model",
+    "nameKey": "tool.solar_system_model",
+    "category": "Learning"
+  },
+  {
+    "id": "map_of_country_world",
+    "nameKey": "tool.map_of_country_world",
+    "category": "Learning"
+  },
+  {
+    "id": "puzzle_alphabet_number",
+    "nameKey": "tool.puzzle_alphabet_number",
+    "category": "Learning"
+  },
+  {
+    "id": "reading_read_along_books",
+    "nameKey": "tool.reading_read_along_books",
+    "category": "Learning"
+  },
+  {
+    "id": "story_cubes",
+    "nameKey": "tool.story_cubes",
+    "category": "Learning"
+  },
+  {
+    "id": "world_globes_interactive",
+    "nameKey": "tool.world_globes_interactive",
+    "category": "Learning"
+  },
+  {
+    "id": "human_body_puzzle_3d",
+    "nameKey": "tool.human_body_puzzle_3d",
+    "category": "Learning"
+  },
+  {
+    "id": "skeleton_model_kids",
+    "nameKey": "tool.skeleton_model_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "planetarium_projector",
+    "nameKey": "tool.planetarium_projector",
+    "category": "Learning"
+  },
+  {
+    "id": "telescope_advanced_kids",
+    "nameKey": "tool.telescope_advanced_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "microscope_digital_kids",
+    "nameKey": "tool.microscope_digital_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "circuit_boards_educational",
+    "nameKey": "tool.circuit_boards_educational",
+    "category": "Learning"
+  },
+  {
+    "id": "coding_robot_advanced",
+    "nameKey": "tool.coding_robot_advanced",
+    "category": "Learning"
+  },
+  {
+    "id": "robot_building_kit_programmable",
+    "nameKey": "tool.robot_building_kit_programmable",
+    "category": "Learning"
+  },
+  {
+    "id": "chemistry_set_advanced_kids",
+    "nameKey": "tool.chemistry_set_advanced_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "physics_experiment_kits",
+    "nameKey": "tool.physics_experiment_kits",
+    "category": "Learning"
+  },
+  {
+    "id": "engineering_design_challenge_kits",
+    "nameKey": "tool.engineering_design_challenge_kits",
+    "category": "Learning"
+  },
+  {
+    "id": "biology_observation_kits",
+    "nameKey": "tool.biology_observation_kits",
+    "category": "Learning"
+  },
+  {
+    "id": "geology_kits_kids",
+    "nameKey": "tool.geology_kits_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "weather_station_kit",
+    "nameKey": "tool.weather_station_kit",
+    "category": "Learning"
+  },
+  {
+    "id": "solar_energy_kit",
+    "nameKey": "tool.solar_energy_kit",
+    "category": "Learning"
+  },
+  {
+    "id": "wind_power_kit",
+    "nameKey": "tool.wind_power_kit",
+    "category": "Learning"
+  },
+  {
+    "id": "water_filtration_kit",
+    "nameKey": "tool.water_filtration_kit",
+    "category": "Learning"
+  },
+  {
+    "id": "magnifying_boxes_bug",
+    "nameKey": "tool.magnifying_boxes_bug",
+    "category": "Learning"
+  },
+  {
+    "id": "ant_farm",
+    "nameKey": "tool.ant_farm",
+    "category": "Learning"
+  },
+  {
+    "id": "worm_farm",
+    "nameKey": "tool.worm_farm",
+    "category": "Learning"
+  },
+  {
+    "id": "butterfly_garden_kit",
+    "nameKey": "tool.butterfly_garden_kit",
+    "category": "Learning"
+  },
+  {
+    "id": "seed_growing_kit_hydroponic",
+    "nameKey": "tool.seed_growing_kit_hydroponic",
+    "category": "Learning"
+  },
+  {
+    "id": "plant_press",
+    "nameKey": "tool.plant_press",
+    "category": "Learning"
+  },
+  {
+    "id": "leaf_collection_book",
+    "nameKey": "tool.leaf_collection_book",
+    "category": "Learning"
+  },
+  {
+    "id": "bird_call_whistles",
+    "nameKey": "tool.bird_call_whistles",
+    "category": "Learning"
+  },
+  {
+    "id": "animal_tracks_stamps",
+    "nameKey": "tool.animal_tracks_stamps",
+    "category": "Learning"
+  },
+  {
+    "id": "dinosaur_fossil_replicas",
+    "nameKey": "tool.dinosaur_fossil_replicas",
+    "category": "Learning"
+  },
+  {
+    "id": "crystal_growing_set",
+    "nameKey": "tool.crystal_growing_set",
+    "category": "Learning"
+  },
+  {
+    "id": "rock_and_mineral_collection",
+    "nameKey": "tool.rock_and_mineral_collection",
+    "category": "Learning"
+  },
+  {
+    "id": "world_capitals_flashcards",
+    "nameKey": "tool.world_capitals_flashcards",
+    "category": "Learning"
+  },
+  {
+    "id": "country_flags_flashcards",
+    "nameKey": "tool.country_flags_flashcards",
+    "category": "Learning"
+  },
+  {
+    "id": "math_manipulatives_fraction_decimal",
+    "nameKey": "tool.math_manipulatives_fraction_decimal",
+    "category": "Learning"
+  },
+  {
+    "id": "geometric_solids_set",
+    "nameKey": "tool.geometric_solids_set",
+    "category": "Learning"
+  },
+  {
+    "id": "abacus_large",
+    "nameKey": "tool.abacus_large",
+    "category": "Learning"
+  },
+  {
+    "id": "calculator_scientific_kids",
+    "nameKey": "tool.calculator_scientific_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "sudoku_for_kids",
+    "nameKey": "tool.sudoku_for_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "crossword_puzzles_kids",
+    "nameKey": "tool.crossword_puzzles_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "word_search_books",
+    "nameKey": "tool.word_search_books",
+    "category": "Learning"
+  },
+  {
+    "id": "grammar_games",
+    "nameKey": "tool.grammar_games",
+    "category": "Learning"
+  },
+  {
+    "id": "spelling_bee_game",
+    "nameKey": "tool.spelling_bee_game",
+    "category": "Learning"
+  },
+  {
+    "id": "story_writing_prompts",
+    "nameKey": "tool.story_writing_prompts",
+    "category": "Learning"
+  },
+  {
+    "id": "journaling_set",
+    "nameKey": "tool.journaling_set",
+    "category": "Learning"
+  },
+  {
+    "id": "language_learning_apps_kids",
+    "nameKey": "tool.language_learning_apps_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "sign_language_cards_kids",
+    "nameKey": "tool.sign_language_cards_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "braille_blocks_kids",
+    "nameKey": "tool.braille_blocks_kids",
+    "category": "Learning"
+  },
+  {
+    "id": "large_bin_or_tray",
+    "nameKey": "tool.large_bin_or_tray",
+    "category": "Sensory"
+  },
+  {
+    "id": "rice_or_lentils",
+    "nameKey": "tool.rice_or_lentils",
+    "category": "Sensory"
+  },
+  {
+    "id": "various_small_objects_sensory",
+    "nameKey": "tool.various_small_objects_sensory",
+    "category": "Sensory"
+  },
+  {
+    "id": "water",
+    "nameKey": "tool.water",
+    "category": "Sensory"
+  },
+  {
+    "id": "bubble_solution",
+    "nameKey": "tool.bubble_solution",
+    "category": "Sensory"
+  },
+  {
+    "id": "bubble_wand",
+    "nameKey": "tool.bubble_wand",
+    "category": "Sensory"
+  },
+  {
+    "id": "cornstarch",
+    "nameKey": "tool.cornstarch",
+    "category": "Sensory"
+  },
+  {
+    "id": "shaving_cream",
+    "nameKey": "tool.shaving_cream",
+    "category": "Sensory"
+  },
+  {
+    "id": "sand",
+    "nameKey": "tool.sand",
+    "category": "Sensory"
+  },
+  {
+    "id": "ice_cubes",
+    "nameKey": "tool.ice_cubes",
+    "category": "Sensory"
+  },
+  {
+    "id": "colorful_scarves",
+    "nameKey": "tool.colorful_scarves",
+    "category": "Sensory"
+  },
+  {
+    "id": "touch_and_feel_books",
+    "nameKey": "tool.touch_and_feel_books",
+    "category": "Sensory"
+  },
+  {
+    "id": "light_table_or_panel",
+    "nameKey": "tool.light_table_or_panel",
+    "category": "Sensory"
+  },
+  {
+    "id": "small_flashlight",
+    "nameKey": "tool.small_flashlight",
+    "category": "Sensory"
+  },
+  {
+    "id": "opaque_bag",
+    "nameKey": "tool.opaque_bag",
+    "category": "Sensory"
+  },
+  {
+    "id": "dropper",
+    "nameKey": "tool.dropper",
+    "category": "Sensory"
+  },
+  {
+    "id": "water_table",
+    "nameKey": "tool.water_table",
+    "category": "Sensory"
+  },
+  {
+    "id": "sensory_fidget_toys",
+    "nameKey": "tool.sensory_fidget_toys",
+    "category": "Sensory"
+  },
+  {
+    "id": "water_beads",
+    "nameKey": "tool.water_beads",
+    "category": "Sensory"
+  },
+  {
+    "id": "kinetic_sand",
+    "nameKey": "tool.kinetic_sand",
+    "category": "Sensory"
+  },
+  {
+    "id": "slime",
+    "nameKey": "tool.slime",
+    "category": "Creative"
+  },
+  {
+    "id": "play_foam",
+    "nameKey": "tool.play_foam",
+    "category": "Sensory"
+  },
+  {
+    "id": "textured_balls",
+    "nameKey": "tool.textured_balls",
+    "category": "Sensory"
+  },
+  {
+    "id": "gel_packs_sensory",
+    "nameKey": "tool.gel_packs_sensory",
+    "category": "Sensory"
+  },
+  {
+    "id": "feely_bags",
+    "nameKey": "tool.feely_bags",
+    "category": "Sensory"
+  },
+  {
+    "id": "light_up_toys",
+    "nameKey": "tool.light_up_toys",
+    "category": "Sensory"
+  },
+  {
+    "id": "sound_tubes",
+    "nameKey": "tool.sound_tubes",
+    "category": "Sensory"
+  },
+  {
+    "id": "scented_playdough",
+    "nameKey": "tool.scented_playdough",
+    "category": "Sensory"
+  },
+  {
+    "id": "aromatherapy_oils_child_safe",
+    "nameKey": "tool.aromatherapy_oils_child_safe",
+    "category": "Sensory"
+  },
+  {
+    "id": "bubble_machine",
+    "nameKey": "tool.bubble_machine",
+    "category": "Sensory"
+  },
+  {
+    "id": "scoops_various_sizes",
+    "nameKey": "tool.scoops_various_sizes",
+    "category": "Sensory"
+  },
+  {
+    "id": "tongs_child_safe",
+    "nameKey": "tool.tongs_child_safe",
+    "category": "Sensory"
+  },
+  {
+    "id": "tweezers_child_safe",
+    "nameKey": "tool.tweezers_child_safe",
+    "category": "Sensory"
+  },
+  {
+    "id": "magnets_bar_ring",
+    "nameKey": "tool.magnets_bar_ring",
+    "category": "Sensory"
+  },
+  {
+    "id": "magnetic_sand",
+    "nameKey": "tool.magnetic_sand",
+    "category": "Sensory"
+  },
+  {
+    "id": "sensory_bottles_filled",
+    "nameKey": "tool.sensory_bottles_filled",
+    "category": "Sensory"
+  },
+  {
+    "id": "rice_dyed",
+    "nameKey": "tool.rice_dyed",
+    "category": "Sensory"
+  },
+  {
+    "id": "beans_dried_various",
+    "nameKey": "tool.beans_dried_various",
+    "category": "Sensory"
+  },
+  {
+    "id": "pasta_dried_various_shapes",
+    "nameKey": "tool.pasta_dried_various_shapes",
+    "category": "Sensory"
+  },
+  {
+    "id": "water_beads_large",
+    "nameKey": "tool.water_beads_large",
+    "category": "Sensory"
+  },
+  {
+    "id": "oobleck_mix",
+    "nameKey": "tool.oobleck_mix",
+    "category": "Sensory"
+  },
+  {
+    "id": "cloud_dough_ingredients",
+    "nameKey": "tool.cloud_dough_ingredients",
+    "category": "Sensory"
+  },
+  {
+    "id": "slime_making_ingredients_borax_safe",
+    "nameKey": "tool.slime_making_ingredients_borax_safe",
+    "category": "Sensory"
+  },
+  {
+    "id": "sand_table",
+    "nameKey": "tool.sand_table",
+    "category": "Sensory"
+  },
+  {
+    "id": "water_table_accessories",
+    "nameKey": "tool.water_table_accessories",
+    "category": "Sensory"
+  },
+  {
+    "id": "sensory_balls_textured_light_up",
+    "nameKey": "tool.sensory_balls_textured_light_up",
+    "category": "Sensory"
+  },
+  {
+    "id": "liquid_motion_timers",
+    "nameKey": "tool.liquid_motion_timers",
+    "category": "Sensory"
+  },
+  {
+    "id": "bubble_tubes_giant",
+    "nameKey": "tool.bubble_tubes_giant",
+    "category": "Sensory"
+  },
+  {
+    "id": "sound_shakers_matching",
+    "nameKey": "tool.sound_shakers_matching",
+    "category": "Sensory"
+  },
+  {
+    "id": "rain_stick",
+    "nameKey": "tool.rain_stick",
+    "category": "Sensory"
+  },
+  {
+    "id": "thunder_drum",
+    "nameKey": "tool.thunder_drum",
+    "category": "Sensory"
+  },
+  {
+    "id": "wind_chimes_kids",
+    "nameKey": "tool.wind_chimes_kids",
+    "category": "Sensory"
+  },
+  {
+    "id": "scented_markers",
+    "nameKey": "tool.scented_markers",
+    "category": "Sensory"
+  },
+  {
+    "id": "scented_stickers",
+    "nameKey": "tool.scented_stickers",
+    "category": "Sensory"
+  },
+  {
+    "id": "essential_oil_diffuser_child_safe",
+    "nameKey": "tool.essential_oil_diffuser_child_safe",
+    "category": "Sensory"
+  },
+  {
+    "id": "weighted_blanket_child",
+    "nameKey": "tool.weighted_blanket_child",
+    "category": "Sensory"
+  },
+  {
+    "id": "fidget_spinners_sensory",
+    "nameKey": "tool.fidget_spinners_sensory",
+    "category": "Sensory"
+  },
+  {
+    "id": "pop_it_toys",
+    "nameKey": "tool.pop_it_toys",
+    "category": "Sensory"
+  },
+  {
+    "id": "liquid_floor_tiles",
+    "nameKey": "tool.liquid_floor_tiles",
+    "category": "Sensory"
+  },
+  {
+    "id": "fiber_optic_lamps",
+    "nameKey": "tool.fiber_optic_lamps",
+    "category": "Sensory"
+  },
+  {
+    "id": "lava_lamps_child_safe",
+    "nameKey": "tool.lava_lamps_child_safe",
+    "category": "Sensory"
+  },
+  {
+    "id": "disco_ball_mini",
+    "nameKey": "tool.disco_ball_mini",
+    "category": "Sensory"
+  },
+  {
+    "id": "projector_star_night",
+    "nameKey": "tool.projector_star_night",
+    "category": "Sensory"
+  },
+  {
+    "id": "glow_sticks",
+    "nameKey": "tool.glow_sticks",
+    "category": "Sensory"
+  },
+  {
+    "id": "blacklight_kit_child_safe",
+    "nameKey": "tool.blacklight_kit_child_safe",
+    "category": "Sensory"
+  },
+  {
+    "id": "sensory_socks_body_sox",
+    "nameKey": "tool.sensory_socks_body_sox",
+    "category": "Sensory"
+  },
+  {
+    "id": "yoga_swing_sensory",
+    "nameKey": "tool.yoga_swing_sensory",
+    "category": "Sensory"
+  },
+  {
+    "id": "outdoor_space",
+    "nameKey": "tool.outdoor_space",
+    "category": "Outdoor"
+  },
+  {
+    "id": "small_shovel_bucket",
+    "nameKey": "tool.small_shovel_bucket",
+    "category": "Outdoor"
+  },
+  {
+    "id": "leaves",
+    "nameKey": "tool.leaves",
+    "category": "Outdoor"
+  },
+  {
+    "id": "stones_pebbles",
+    "nameKey": "tool.stones_pebbles",
+    "category": "Outdoor"
+  },
+  {
+    "id": "sticks_twigs",
+    "nameKey": "tool.sticks_twigs",
+    "category": "Outdoor"
+  },
+  {
+    "id": "bird_seed",
+    "nameKey": "tool.bird_seed",
+    "category": "Outdoor"
+  },
+  {
+    "id": "gloves",
+    "nameKey": "tool.gloves",
+    "category": "Outdoor"
+  },
+  {
+    "id": "sleeping_bags",
+    "nameKey": "tool.sleeping_bags",
+    "category": "Outdoor"
+  },
+  {
+    "id": "child_gardening_tools",
+    "nameKey": "tool.child_gardening_tools",
+    "category": "Outdoor"
+  },
+  {
+    "id": "bug_catching_kit",
+    "nameKey": "tool.bug_catching_kit",
+    "category": "Outdoor"
+  },
+  {
+    "id": "sidewalk_chalk",
+    "nameKey": "tool.sidewalk_chalk",
+    "category": "Outdoor"
+  },
+  {
+    "id": "hula_hoop",
+    "nameKey": "tool.hula_hoop",
+    "category": "Sports"
+  },
+  {
+    "id": "kite",
+    "nameKey": "tool.kite",
+    "category": "Outdoor"
+  },
+  {
+    "id": "water_balloons",
+    "nameKey": "tool.water_balloons",
+    "category": "Outdoor"
+  },
+  {
+    "id": "squirt_guns_child_safe",
+    "nameKey": "tool.squirt_guns_child_safe",
+    "category": "Outdoor"
+  },
+  {
+    "id": "sandbox",
+    "nameKey": "tool.sandbox",
+    "category": "Outdoor"
+  },
+  {
+    "id": "sandbox_toys",
+    "nameKey": "tool.sandbox_toys",
+    "category": "Outdoor"
+  },
+  {
+    "id": "watering_can_child_size",
+    "nameKey": "tool.watering_can_child_size",
+    "category": "Outdoor"
+  },
+  {
+    "id": "seeds_for_planting",
+    "nameKey": "tool.seeds_for_planting",
+    "category": "Outdoor"
+  },
+  {
+    "id": "potting_soil",
+    "nameKey": "tool.potting_soil",
+    "category": "Outdoor"
+  },
+  {
+    "id": "flower_pots_small",
+    "nameKey": "tool.flower_pots_small",
+    "category": "Outdoor"
+  },
+  {
+    "id": "bird_feeder_kit",
+    "nameKey": "tool.bird_feeder_kit",
+    "category": "Outdoor"
+  },
+  {
+    "id": "butterfly_net",
+    "nameKey": "tool.butterfly_net",
+    "category": "Outdoor"
+  },
+  {
+    "id": "wagon_toy",
+    "nameKey": "tool.wagon_toy",
+    "category": "Outdoor"
+  },
+  {
+    "id": "climbing_dome",
+    "nameKey": "tool.climbing_dome",
+    "category": "Outdoor"
+  },
+  {
+    "id": "swing_set",
+    "nameKey": "tool.swing_set",
+    "category": "Outdoor"
+  },
+  {
+    "id": "playhouse_outdoor",
+    "nameKey": "tool.playhouse_outdoor",
+    "category": "Outdoor"
+  },
+  {
+    "id": "picnic_blanket",
+    "nameKey": "tool.picnic_blanket",
+    "category": "Outdoor"
+  },
+  {
+    "id": "outdoor_easel",
+    "nameKey": "tool.outdoor_easel",
+    "category": "Outdoor"
+  },
+  {
+    "id": "nature_journal",
+    "nameKey": "tool.nature_journal",
+    "category": "Outdoor"
+  },
+  {
+    "id": "binoculars_kids",
+    "nameKey": "tool.binoculars_kids",
+    "category": "Outdoor"
+  },
+  {
+    "id": "compass_kids",
+    "nameKey": "tool.compass_kids",
+    "category": "Outdoor"
+  },
+  {
+    "id": "geocaching_kit_kids",
+    "nameKey": "tool.geocaching_kit_kids",
+    "category": "Outdoor"
+  },
+  {
+    "id": "metal_detector_kids",
+    "nameKey": "tool.metal_detector_kids",
+    "category": "Outdoor"
+  },
+  {
+    "id": "walkie_talkies_kids",
+    "nameKey": "tool.walkie_talkies_kids",
+    "category": "Outdoor"
+  },
+  {
+    "id": "camping_tent_child_size",
+    "nameKey": "tool.camping_tent_child_size",
+    "category": "Outdoor"
+  },
+  {
+    "id": "camping_gear_child_size",
+    "nameKey": "tool.camping_gear_child_size",
+    "category": "Outdoor"
+  },
+  {
+    "id": "fishing_rod_child",
+    "nameKey": "tool.fishing_rod_child",
+    "category": "Outdoor"
+  },
+  {
+    "id": "fishing_net_small",
+    "nameKey": "tool.fishing_net_small",
+    "category": "Outdoor"
+  },
+  {
+    "id": "pond_dipping_net",
+    "nameKey": "tool.pond_dipping_net",
+    "category": "Outdoor"
+  },
+  {
+    "id": "magnifying_bug_jar",
+    "nameKey": "tool.magnifying_bug_jar",
+    "category": "Outdoor"
+  },
+  {
+    "id": "binoculars_high_powered_kids",
+    "nameKey": "tool.binoculars_high_powered_kids",
+    "category": "Outdoor"
+  },
+  {
+    "id": "plant_identification_guides",
+    "nameKey": "tool.plant_identification_guides",
+    "category": "Outdoor"
+  },
+  {
+    "id": "bird_identification_guides",
+    "nameKey": "tool.bird_identification_guides",
+    "category": "Outdoor"
+  },
+  {
+    "id": "tree_identification_guides",
+    "nameKey": "tool.tree_identification_guides",
+    "category": "Outdoor"
+  },
+  {
+    "id": "rock_collection_bag",
+    "nameKey": "tool.rock_collection_bag",
+    "category": "Outdoor"
+  },
+  {
+    "id": "gardening_gloves_child",
+    "nameKey": "tool.gardening_gloves_child",
+    "category": "Outdoor"
+  },
+  {
+    "id": "garden_hose_nozzle_child",
+    "nameKey": "tool.garden_hose_nozzle_child",
+    "category": "Outdoor"
+  },
+  {
+    "id": "rain_gauge_kids",
+    "nameKey": "tool.rain_gauge_kids",
+    "category": "Outdoor"
+  },
+  {
+    "id": "wind_sock_kids",
+    "nameKey": "tool.wind_sock_kids",
+    "category": "Outdoor"
+  },
+  {
+    "id": "compost_bin_mini",
+    "nameKey": "tool.compost_bin_mini",
+    "category": "Outdoor"
+  },
+  {
+    "id": "terrarium_kit",
+    "nameKey": "tool.terrarium_kit",
+    "category": "Outdoor"
+  },
+  {
+    "id": "bug_hotel_kit",
+    "nameKey": "tool.bug_hotel_kit",
+    "category": "Outdoor"
+  },
+  {
+    "id": "birdhouse_building_kit",
+    "nameKey": "tool.birdhouse_building_kit",
+    "category": "Outdoor"
+  },
+  {
+    "id": "squirrel_feeder_kit",
+    "nameKey": "tool.squirrel_feeder_kit",
+    "category": "Outdoor"
+  },
+  {
+    "id": "pond_kit_small",
+    "nameKey": "tool.pond_kit_small",
+    "category": "Outdoor"
+  },
+  {
+    "id": "tree_climbing_harness_child_safe",
+    "nameKey": "tool.tree_climbing_harness_child_safe",
+    "category": "Outdoor"
+  },
+  {
+    "id": "slackline_kit_kids",
+    "nameKey": "tool.slackline_kit_kids",
+    "category": "Outdoor"
+  },
+  {
+    "id": "outdoor_art_easel",
+    "nameKey": "tool.outdoor_art_easel",
+    "category": "Outdoor"
+  },
+  {
+    "id": "mud_kitchen_set",
+    "nameKey": "tool.mud_kitchen_set",
+    "category": "Outdoor"
+  },
+  {
+    "id": "water_play_pump_faucet",
+    "nameKey": "tool.water_play_pump_faucet",
+    "category": "Outdoor"
+  },
+  {
+    "id": "sprinkler_toys",
+    "nameKey": "tool.sprinkler_toys",
+    "category": "Outdoor"
+  },
+  {
+    "id": "water_slide_inflatable",
+    "nameKey": "tool.water_slide_inflatable",
+    "category": "Outdoor"
+  },
+  {
+    "id": "pool_inflatable_child",
+    "nameKey": "tool.pool_inflatable_child",
+    "category": "Outdoor"
+  },
+  {
+    "id": "sand_dunes_toy_cars",
+    "nameKey": "tool.sand_dunes_toy_cars",
+    "category": "Outdoor"
+  },
+  {
+    "id": "beach_toys_advanced",
+    "nameKey": "tool.beach_toys_advanced",
+    "category": "Outdoor"
+  },
+  {
+    "id": "kites_stunt",
+    "nameKey": "tool.kites_stunt",
+    "category": "Outdoor"
+  },
+  {
+    "id": "boomerangs_child_safe",
+    "nameKey": "tool.boomerangs_child_safe",
+    "category": "Outdoor"
+  },
+  {
+    "id": "disc_golf_set_kids",
+    "nameKey": "tool.disc_golf_set_kids",
+    "category": "Outdoor"
+  },
+  {
+    "id": "archery_set_kids_suction_cup",
+    "nameKey": "tool.archery_set_kids_suction_cup",
+    "category": "Outdoor"
+  },
+  {
+    "id": "croquet_set_kids",
+    "nameKey": "tool.croquet_set_kids",
+    "category": "Outdoor"
+  },
+  {
+    "id": "bocce_ball_set_kids",
+    "nameKey": "tool.bocce_ball_set_kids",
+    "category": "Outdoor"
+  },
+  {
+    "id": "ladder_ball_set_kids",
+    "nameKey": "tool.ladder_ball_set_kids",
+    "category": "Outdoor"
+  },
+  {
+    "id": "cornhole_game_kids",
+    "nameKey": "tool.cornhole_game_kids",
+    "category": "Outdoor"
+  },
+  {
+    "id": "giant_jenga_outdoor",
+    "nameKey": "tool.giant_jenga_outdoor",
+    "category": "Outdoor"
+  },
+  {
+    "id": "giant_connect_four_outdoor",
+    "nameKey": "tool.giant_connect_four_outdoor",
+    "category": "Outdoor"
+  },
+  {
+    "id": "inflatable_bowling_pins",
+    "nameKey": "tool.inflatable_bowling_pins",
+    "category": "Outdoor"
+  },
+  {
+    "id": "outdoor_fort_materials_large_sheets_tarps",
+    "nameKey": "tool.outdoor_fort_materials_large_sheets_tarps",
+    "category": "Outdoor"
+  },
+  {
+    "id": "old_socks",
+    "nameKey": "tool.old_socks",
+    "category": "Everyday"
+  },
+  {
+    "id": "paper_towel_toilet_paper_rolls",
+    "nameKey": "tool.paper_towel_toilet_paper_rolls",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "empty_plastic_bottles",
+    "nameKey": "tool.empty_plastic_bottles",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "cardboard_boxes_various",
+    "nameKey": "tool.cardboard_boxes_various",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "plastic_containers_with_lids",
+    "nameKey": "tool.plastic_containers_with_lids",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "clothespins",
+    "nameKey": "tool.clothespins",
+    "category": "Everyday"
+  },
+  {
+    "id": "sponges",
+    "nameKey": "tool.sponges",
+    "category": "Everyday"
+  },
+  {
+    "id": "old_newspapers_magazines",
+    "nameKey": "tool.old_newspapers_magazines",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "buttons",
+    "nameKey": "tool.buttons",
+    "category": "Everyday"
+  },
+  {
+    "id": "lids_various_sizes",
+    "nameKey": "tool.lids_various_sizes",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "empty_egg_cartons",
+    "nameKey": "tool.empty_egg_cartons",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "plastic_cups_recycled",
+    "nameKey": "tool.plastic_cups_recycled",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "old_toothbrushes",
+    "nameKey": "tool.old_toothbrushes",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "string_recycled",
+    "nameKey": "tool.string_recycled",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "coins",
+    "nameKey": "tool.coins",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "general_containers",
+    "nameKey": "tool.general_containers",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "grocery_bag",
+    "nameKey": "tool.grocery_bag",
+    "category": "Everyday"
+  },
+  {
+    "id": "paper_envelope",
+    "nameKey": "tool.paper_envelope",
+    "category": "Everyday"
+  },
+  {
+    "id": "cardboard_roll",
+    "nameKey": "tool.cardboard_roll",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "light_bulb_box",
+    "nameKey": "tool.light_bulb_box",
+    "category": "Everyday"
+  },
+  {
+    "id": "newspaper_roll",
+    "nameKey": "tool.newspaper_roll",
+    "category": "Everyday"
+  },
+  {
+    "id": "old_t_shirt",
+    "nameKey": "tool.old_t_shirt",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "empty_tissue_boxes",
+    "nameKey": "tool.empty_tissue_boxes",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "plastic_jugs_milk_detergent",
+    "nameKey": "tool.plastic_jugs_milk_detergent",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "bottle_caps",
+    "nameKey": "tool.bottle_caps",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "bread_tags",
+    "nameKey": "tool.bread_tags",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "empty_spray_bottles",
+    "nameKey": "tool.empty_spray_bottles",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "aluminum_foil_scraps",
+    "nameKey": "tool.aluminum_foil_scraps",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "plastic_bags_strong",
+    "nameKey": "tool.plastic_bags_strong",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "packaging_materials_bubble_wrap_foam",
+    "nameKey": "tool.packaging_materials_bubble_wrap_foam",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "old_buttons_sewing",
+    "nameKey": "tool.old_buttons_sewing",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "old_keys",
+    "nameKey": "tool.old_keys",
+    "category": "Everyday"
+  },
+  {
+    "id": "old_cell_phones_toy",
+    "nameKey": "tool.old_cell_phones_toy",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "old_remotes_toy",
+    "nameKey": "tool.old_remotes_toy",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "plastic_straws_used",
+    "nameKey": "tool.plastic_straws_used",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "old_socks_single",
+    "nameKey": "tool.old_socks_single",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "empty_spice_jars",
+    "nameKey": "tool.empty_spice_jars",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "empty_food_containers_yogurt_etc",
+    "nameKey": "tool.empty_food_containers_yogurt_etc",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "cardboard_shoe_boxes",
+    "nameKey": "tool.cardboard_shoe_boxes",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "paper_plates_used_clean",
+    "nameKey": "tool.paper_plates_used_clean",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "cardboard_rolls_from_foil",
+    "nameKey": "tool.cardboard_rolls_from_foil",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "plastic_net_bags_fruit_veg",
+    "nameKey": "tool.plastic_net_bags_fruit_veg",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "aluminum_cans_clean_empty",
+    "nameKey": "tool.aluminum_cans_clean_empty",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "plastic_egg_cartons",
+    "nameKey": "tool.plastic_egg_cartons",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "cereal_box_cardboard_inner",
+    "nameKey": "tool.cereal_box_cardboard_inner",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "old_puzzle_pieces_mismatched",
+    "nameKey": "tool.old_puzzle_pieces_mismatched",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "old_game_board_pieces",
+    "nameKey": "tool.old_game_board_pieces",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "plastic_utensils_used_clean",
+    "nameKey": "tool.plastic_utensils_used_clean",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "empty_pill_bottles_childproof_lids",
+    "nameKey": "tool.empty_pill_bottles_childproof_lids",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "old_cd_discs",
+    "nameKey": "tool.old_cd_discs",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "wine_corks_plastic",
+    "nameKey": "tool.wine_corks_plastic",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "bottle_brush_cleaner",
+    "nameKey": "tool.bottle_brush_cleaner",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "milk_cartons_waxed",
+    "nameKey": "tool.milk_cartons_waxed",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "juice_boxes_clean_empty",
+    "nameKey": "tool.juice_boxes_clean_empty",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "gift_card_old",
+    "nameKey": "tool.gift_card_old",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "fabric_softener_sheets_used_clean",
+    "nameKey": "tool.fabric_softener_sheets_used_clean",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "tissue_paper_scraps_colored",
+    "nameKey": "tool.tissue_paper_scraps_colored",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "aluminum_pie_plates_clean",
+    "nameKey": "tool.aluminum_pie_plates_clean",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "plastic_cup_lids_with_straw_holes",
+    "nameKey": "tool.plastic_cup_lids_with_straw_holes",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "old_toothbrushes_for_cleaning_crafts",
+    "nameKey": "tool.old_toothbrushes_for_cleaning_crafts",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "packing_peanuts_biodegradable",
+    "nameKey": "tool.packing_peanuts_biodegradable",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "empty_tape_rolls",
+    "nameKey": "tool.empty_tape_rolls",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "old_shoe_laces",
+    "nameKey": "tool.old_shoe_laces",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "broken_crayons",
+    "nameKey": "tool.broken_crayons",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "broken_jewelry_pieces",
+    "nameKey": "tool.broken_jewelry_pieces",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "old_magazines_with_pictures",
+    "nameKey": "tool.old_magazines_with_pictures",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "newspaper_sections_specific",
+    "nameKey": "tool.newspaper_sections_specific",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "paper_grocery_bags_large",
+    "nameKey": "tool.paper_grocery_bags_large",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "cardboard_trays_food_packaging",
+    "nameKey": "tool.cardboard_trays_food_packaging",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "plastic_netting_produce",
+    "nameKey": "tool.plastic_netting_produce",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "mesh_bags_onion_potatoes",
+    "nameKey": "tool.mesh_bags_onion_potatoes",
+    "category": "Household_Recycled"
+  },
+  {
+    "id": "toothbrush",
+    "nameKey": "tool.toothbrush",
+    "category": "Everyday"
+  },
+  {
+    "id": "soap",
+    "nameKey": "tool.soap",
+    "category": "Bathroom"
+  },
+  {
+    "id": "toilet_for_training",
+    "nameKey": "tool.toilet_for_training",
+    "category": "Self_Care"
+  },
+  {
+    "id": "clothing_items_for_dressing",
+    "nameKey": "tool.clothing_items_for_dressing",
+    "category": "Self_Care"
+  },
+  {
+    "id": "brooms_dustpans_toy_or_real",
+    "nameKey": "tool.brooms_dustpans_toy_or_real",
+    "category": "Self_Care"
+  },
+  {
+    "id": "toothbrush_kid_size",
+    "nameKey": "tool.toothbrush_kid_size",
+    "category": "Self_Care"
+  },
+  {
+    "id": "toothpaste_kid_flavor",
+    "nameKey": "tool.toothpaste_kid_flavor",
+    "category": "Self_Care"
+  },
+  {
+    "id": "comb_brush",
+    "nameKey": "tool.comb_brush",
+    "category": "Self_Care"
+  },
+  {
+    "id": "small_mirror_unbreakable",
+    "nameKey": "tool.small_mirror_unbreakable",
+    "category": "Self_Care"
+  },
+  {
+    "id": "child_safe_soap",
+    "nameKey": "tool.child_safe_soap",
+    "category": "Self_Care"
+  },
+  {
+    "id": "bath_toys",
+    "nameKey": "tool.bath_toys",
+    "category": "Self_Care"
+  },
+  {
+    "id": "hair_ties_clips",
+    "nameKey": "tool.hair_ties_clips",
+    "category": "Self_Care"
+  },
+  {
+    "id": "small_backpack_for_dressing_practice",
+    "nameKey": "tool.small_backpack_for_dressing_practice",
+    "category": "Self_Care"
+  },
+  {
+    "id": "velcro_shoes",
+    "nameKey": "tool.velcro_shoes",
+    "category": "Self_Care"
+  },
+  {
+    "id": "button_practice_board",
+    "nameKey": "tool.button_practice_board",
+    "category": "Self_Care"
+  },
+  {
+    "id": "zipper_practice_board",
+    "nameKey": "tool.zipper_practice_board",
+    "category": "Self_Care"
+  },
+  {
+    "id": "lightweight_scarf",
+    "nameKey": "tool.lightweight_scarf",
+    "category": "Everyday"
+  },
+  {
+    "id": "basin_or_tub",
+    "nameKey": "tool.basin_or_tub",
+    "category": "Everyday"
+  },
+  {
+    "id": "basket",
+    "nameKey": "tool.basket",
+    "category": "Home"
+  },
+  {
+    "id": "family_photos",
+    "nameKey": "tool.family_photos",
+    "category": "Everyday"
+  },
+  {
+    "id": "high_chair",
+    "nameKey": "tool.high_chair",
+    "category": "Everyday"
+  },
+  {
+    "id": "zipper_piece",
+    "nameKey": "tool.zipper_piece",
+    "category": "Everyday"
+  },
+  {
+    "id": "old_towel",
+    "nameKey": "tool.old_towel",
+    "category": "Everyday"
+  },
+  {
+    "id": "laundry_clip",
+    "nameKey": "tool.laundry_clip",
+    "category": "Everyday"
+  },
+  {
+    "id": "laundry_basket",
+    "nameKey": "tool.laundry_basket",
+    "category": "Home"
+  },
+  {
+    "id": "bed_sheets_old",
+    "nameKey": "tool.bed_sheets_old",
+    "category": "Everyday"
+  },
+  {
+    "id": "pillows_cushions",
+    "nameKey": "tool.pillows_cushions",
+    "category": "Everyday"
+  },
+  {
+    "id": "blankets_throws",
+    "nameKey": "tool.blankets_throws",
+    "category": "Everyday"
+  },
+  {
+    "id": "clothesline_indoor_outdoor",
+    "nameKey": "tool.clothesline_indoor_outdoor",
+    "category": "Everyday"
+  },
+  {
+    "id": "clipboards",
+    "nameKey": "tool.clipboards",
+    "category": "Everyday"
+  },
+  {
+    "id": "notepads_small",
+    "nameKey": "tool.notepads_small",
+    "category": "Everyday"
+  },
+  {
+    "id": "pencils",
+    "nameKey": "tool.pencils",
+    "category": "Everyday"
+  },
+  {
+    "id": "erasers",
+    "nameKey": "tool.erasers",
+    "category": "Everyday"
+  },
+  {
+    "id": "rulers",
+    "nameKey": "tool.rulers",
+    "category": "Everyday"
+  },
+  {
+    "id": "scissors_adult_supervised",
+    "nameKey": "tool.scissors_adult_supervised",
+    "category": "Everyday"
+  },
+  {
+    "id": "magnets_fridge",
+    "nameKey": "tool.magnets_fridge",
+    "category": "Everyday"
+  },
+  {
+    "id": "whiteboard_dry_erase_markers",
+    "nameKey": "tool.whiteboard_dry_erase_markers",
+    "category": "Everyday"
+  },
+  {
+    "id": "chalkboard_chalk",
+    "nameKey": "tool.chalkboard_chalk",
+    "category": "Everyday"
+  },
+  {
+    "id": "timer_kitchen_or_visual",
+    "nameKey": "tool.timer_kitchen_or_visual",
+    "category": "Everyday"
+  },
+  {
+    "id": "sand_timer",
+    "nameKey": "tool.sand_timer",
+    "category": "Everyday"
+  },
+  {
+    "id": "step_stool",
+    "nameKey": "tool.step_stool",
+    "category": "Everyday"
+  },
+  {
+    "id": "cleaning_cloths",
+    "nameKey": "tool.cleaning_cloths",
+    "category": "Everyday"
+  },
+  {
+    "id": "spray_bottle_empty",
+    "nameKey": "tool.spray_bottle_empty",
+    "category": "Everyday"
+  },
+  {
+    "id": "dust_rag",
+    "nameKey": "tool.dust_rag",
+    "category": "Everyday"
+  },
+  {
+    "id": "watering_can_general",
+    "nameKey": "tool.watering_can_general",
+    "category": "Everyday"
+  },
+  {
+    "id": "bucket_general",
+    "nameKey": "tool.bucket_general",
+    "category": "Everyday"
+  },
+  {
+    "id": "containers_various_materials",
+    "nameKey": "tool.containers_various_materials",
+    "category": "Everyday"
+  },
+  {
+    "id": "zippered_pouches",
+    "nameKey": "tool.zippered_pouches",
+    "category": "Everyday"
+  },
+  {
+    "id": "velcro_strips",
+    "nameKey": "tool.velcro_strips",
+    "category": "Everyday"
+  },
+  {
+    "id": "mirror_general",
+    "nameKey": "tool.mirror_general",
+    "category": "Everyday"
+  },
+  {
+    "id": "tablet_for_educational_apps",
+    "nameKey": "tool.tablet_for_educational_apps",
+    "category": "STEM"
+  },
+  {
+    "id": "coding_kit_for_kids",
+    "nameKey": "tool.coding_kit_for_kids",
+    "category": "STEM"
+  },
+  {
+    "id": "robotics_kit_for_kids",
+    "nameKey": "tool.robotics_kit_for_kids",
+    "category": "STEM"
+  },
+  {
+    "id": "science_experiment_kit",
+    "nameKey": "tool.science_experiment_kit",
+    "category": "STEM"
+  },
+  {
+    "id": "microscope_kids",
+    "nameKey": "tool.microscope_kids",
+    "category": "STEM"
+  },
+  {
+    "id": "telescope_kids",
+    "nameKey": "tool.telescope_kids",
+    "category": "STEM"
+  },
+  {
+    "id": "building_set_advanced",
+    "nameKey": "tool.building_set_advanced",
+    "category": "STEM"
+  },
+  {
+    "id": "gears_and_levers_set",
+    "nameKey": "tool.gears_and_levers_set",
+    "category": "STEM"
+  },
+  {
+    "id": "simple_circuits_kit",
+    "nameKey": "tool.simple_circuits_kit",
+    "category": "STEM"
+  },
+  {
+    "id": "magnets_toy",
+    "nameKey": "tool.magnets_toy",
+    "category": "STEM"
+  },
+  {
+    "id": "balance_scale",
+    "nameKey": "tool.balance_scale",
+    "category": "STEM"
+  },
+  {
+    "id": "measuring_tapes_child_safe",
+    "nameKey": "tool.measuring_tapes_child_safe",
+    "category": "STEM"
+  },
+  {
+    "id": "ruler_child_safe",
+    "nameKey": "tool.ruler_child_safe",
+    "category": "STEM"
+  },
+  {
+    "id": "calculator_toy",
+    "nameKey": "tool.calculator_toy",
+    "category": "STEM"
+  },
+  {
+    "id": "robot_toy_programmable",
+    "nameKey": "tool.robot_toy_programmable",
+    "category": "STEM"
+  },
+  {
+    "id": "chemistry_set_kids",
+    "nameKey": "tool.chemistry_set_kids",
+    "category": "STEM"
+  },
+  {
+    "id": "physics_toys_simple",
+    "nameKey": "tool.physics_toys_simple",
+    "category": "STEM"
+  },
+  {
+    "id": "magnets_for_experiments",
+    "nameKey": "tool.magnets_for_experiments",
+    "category": "STEM"
+  },
+  {
+    "id": "code_and_go_robot_mouse",
+    "nameKey": "tool.code_and_go_robot_mouse",
+    "category": "STEM"
+  },
+  {
+    "id": "snap_circuits",
+    "nameKey": "tool.snap_circuits",
+    "category": "STEM"
+  },
+  {
+    "id": "crystal_growing_kit",
+    "nameKey": "tool.crystal_growing_kit",
+    "category": "STEM"
+  },
+  {
+    "id": "volcano_making_kit",
+    "nameKey": "tool.volcano_making_kit",
+    "category": "STEM"
+  },
+  {
+    "id": "solar_powered_toys",
+    "nameKey": "tool.solar_powered_toys",
+    "category": "STEM"
+  },
+  {
+    "id": "robot_arm_kit",
+    "nameKey": "tool.robot_arm_kit",
+    "category": "STEM"
+  },
+  {
+    "id": "3d_pens_child_safe",
+    "nameKey": "tool.3d_pens_child_safe",
+    "category": "STEM"
+  },
+  {
+    "id": "engineering_building_sets",
+    "nameKey": "tool.engineering_building_sets",
+    "category": "STEM"
+  },
+  {
+    "id": "child_sized_musical_instruments",
+    "nameKey": "tool.child_sized_musical_instruments",
+    "category": "Music"
+  },
+  {
+    "id": "simple_musical_shakers",
+    "nameKey": "tool.simple_musical_shakers",
+    "category": "Music"
+  },
+  {
+    "id": "xylophone",
+    "nameKey": "tool.xylophone",
+    "category": "Music"
+  },
+  {
+    "id": "tambourine",
+    "nameKey": "tool.tambourine",
+    "category": "Music"
+  },
+  {
+    "id": "maracas",
+    "nameKey": "tool.maracas",
+    "category": "Music"
+  },
+  {
+    "id": "drum_set_toy",
+    "nameKey": "tool.drum_set_toy",
+    "category": "Music"
+  },
+  {
+    "id": "keyboard_piano_child_size",
+    "nameKey": "tool.keyboard_piano_child_size",
+    "category": "Music"
+  },
+  {
+    "id": "ukulele_child_size",
+    "nameKey": "tool.ukulele_child_size",
+    "category": "Music"
+  },
+  {
+    "id": "recorder_flute_child_size",
+    "nameKey": "tool.recorder_flute_child_size",
+    "category": "Music"
+  },
+  {
+    "id": "rhythm_sticks",
+    "nameKey": "tool.rhythm_sticks",
+    "category": "Music"
+  },
+  {
+    "id": "bells_wrist_ankle",
+    "nameKey": "tool.bells_wrist_ankle",
+    "category": "Music"
+  },
+  {
+    "id": "music_player_child_friendly",
+    "nameKey": "tool.music_player_child_friendly",
+    "category": "Music"
+  },
+  {
+    "id": "headphones_child_friendly",
+    "nameKey": "tool.headphones_child_friendly",
+    "category": "Music"
+  },
+  {
+    "id": "song_books",
+    "nameKey": "tool.song_books",
+    "category": "Music"
+  },
+  {
+    "id": "sheet_music_simple",
+    "nameKey": "tool.sheet_music_simple",
+    "category": "Music"
+  },
+  {
+    "id": "child_sized_basketball_hoop",
+    "nameKey": "tool.child_sized_basketball_hoop",
+    "category": "Sport"
+  },
+  {
+    "id": "soccer_goal",
+    "nameKey": "tool.soccer_goal",
+    "category": "Sport"
+  },
+  {
+    "id": "balance_bike",
+    "nameKey": "tool.balance_bike",
+    "category": "Movement"
+  },
+  {
+    "id": "tricycle_or_bicycle",
+    "nameKey": "tool.tricycle_or_bicycle",
+    "category": "Sport"
+  },
+  {
+    "id": "scooter",
+    "nameKey": "tool.scooter",
+    "category": "Movement"
+  },
+  {
+    "id": "jump_rope",
+    "nameKey": "tool.jump_rope",
+    "category": "Sports"
+  },
+  {
+    "id": "mini_golf_set",
+    "nameKey": "tool.mini_golf_set",
+    "category": "Sport"
+  },
+  {
+    "id": "bowling_set_kids",
+    "nameKey": "tool.bowling_set_kids",
+    "category": "Sport"
+  },
+  {
+    "id": "t_ball_set",
+    "nameKey": "tool.t_ball_set",
+    "category": "Sport"
+  },
+  {
+    "id": "frisbee",
+    "nameKey": "tool.frisbee",
+    "category": "Sport"
+  },
+  {
+    "id": "bean_bags",
+    "nameKey": "tool.bean_bags",
+    "category": "Sport"
+  },
+  {
+    "id": "ring_toss_game",
+    "nameKey": "tool.ring_toss_game",
+    "category": "Sport"
+  },
+  {
+    "id": "softball_set",
+    "nameKey": "tool.softball_set",
+    "category": "Sport"
+  },
+  {
+    "id": "tennis_rackets_kids",
+    "nameKey": "tool.tennis_rackets_kids",
+    "category": "Sport"
+  },
+  {
+    "id": "badminton_set_kids",
+    "nameKey": "tool.badminton_set_kids",
+    "category": "Sport"
+  },
+  {
+    "id": "trampoline_mini",
+    "nameKey": "tool.trampoline_mini",
+    "category": "Sport"
+  },
+  {
+    "id": "helmet_kids",
+    "nameKey": "tool.helmet_kids",
+    "category": "Sport"
+  },
+  {
+    "id": "knee_elbow_pads",
+    "nameKey": "tool.knee_elbow_pads",
+    "category": "Sport"
+  },
+  {
+    "id": "yoga_mat_kids",
+    "nameKey": "tool.yoga_mat_kids",
+    "category": "Sport"
+  },
+  {
+    "id": "exercise_ball_kids",
+    "nameKey": "tool.exercise_ball_kids",
+    "category": "Sport"
+  },
+  {
+    "id": "balance_board",
+    "nameKey": "tool.balance_board",
+    "category": "Sport"
+  },
+  {
+    "id": "climbing_rope_indoor",
+    "nameKey": "tool.climbing_rope_indoor",
+    "category": "Sport"
+  },
+  {
+    "id": "obstacle_course_elements",
+    "nameKey": "tool.obstacle_course_elements",
+    "category": "Sport"
+  },
+  {
+    "id": "knife",
+    "nameKey": "tool.knife",
+    "category": "Kitchen"
+  },
+  {
+    "id": "tongs",
+    "nameKey": "tool.tongs",
+    "category": "Kitchen"
+  },
+  {
+    "id": "blender",
+    "nameKey": "tool.blender",
+    "category": "Kitchen"
+  },
+  {
+    "id": "toaster",
+    "nameKey": "tool.toaster",
+    "category": "Kitchen"
+  },
+  {
+    "id": "paint",
+    "nameKey": "tool.paint",
+    "category": "Art"
+  },
+  {
+    "id": "paintbrush",
+    "nameKey": "tool.paintbrush",
+    "category": "Art"
+  },
+  {
+    "id": "scissors",
+    "nameKey": "tool.scissors",
+    "category": "Art"
+  },
+  {
+    "id": "glue",
+    "nameKey": "tool.glue",
+    "category": "Art"
+  },
+  {
+    "id": "tape",
+    "nameKey": "tool.tape",
+    "category": "Art"
+  },
+  {
+    "id": "construction_paper",
+    "nameKey": "tool.construction_paper",
+    "category": "Art"
+  },
+  {
+    "id": "stamps",
+    "nameKey": "tool.stamps",
+    "category": "Art"
+  },
+  {
+    "id": "sticker_sheet",
+    "nameKey": "tool.sticker_sheet",
+    "category": "Art"
+  },
+  {
+    "id": "beads",
+    "nameKey": "tool.beads",
+    "category": "Art"
+  },
+  {
+    "id": "felt",
+    "nameKey": "tool.felt",
+    "category": "Art"
+  },
+  {
+    "id": "cardboard",
+    "nameKey": "tool.cardboard",
+    "category": "Art"
+  },
+  {
+    "id": "lego",
+    "nameKey": "tool.lego",
+    "category": "Toys"
+  },
+  {
+    "id": "wooden_blocks",
+    "nameKey": "tool.wooden_blocks",
+    "category": "Toys"
+  },
+  {
+    "id": "rubber_duck",
+    "nameKey": "tool.rubber_duck",
+    "category": "Toys"
+  },
+  {
+    "id": "teddy_bear",
+    "nameKey": "tool.teddy_bear",
+    "category": "Toys"
+  },
+  {
+    "id": "plush_doll",
+    "nameKey": "tool.plush_doll",
+    "category": "Toys"
+  },
+  {
+    "id": "toy_car",
+    "nameKey": "tool.toy_car",
+    "category": "Toys"
+  },
+  {
+    "id": "train_set",
+    "nameKey": "tool.train_set",
+    "category": "Toys"
+  },
+  {
+    "id": "stacking_cups",
+    "nameKey": "tool.stacking_cups",
+    "category": "Toys"
+  },
+  {
+    "id": "shape_sorter",
+    "nameKey": "tool.shape_sorter",
+    "category": "Montessori"
+  },
+  {
+    "id": "baby_rattle",
+    "nameKey": "tool.baby_rattle",
+    "category": "Toys"
+  },
+  {
+    "id": "kitchen_set",
+    "nameKey": "tool.kitchen_set",
+    "category": "Toys"
+  },
+  {
+    "id": "doctor_kit",
+    "nameKey": "tool.doctor_kit",
+    "category": "Toys"
+  },
+  {
+    "id": "musical_instruments",
+    "nameKey": "tool.musical_instruments",
+    "category": "Toys"
+  },
+  {
+    "id": "broom",
+    "nameKey": "tool.broom",
+    "category": "Home"
+  },
+  {
+    "id": "dustpan",
+    "nameKey": "tool.dustpan",
+    "category": "Home"
+  },
+  {
+    "id": "mop",
+    "nameKey": "tool.mop",
+    "category": "Home"
+  },
+  {
+    "id": "vacuum_cleaner",
+    "nameKey": "tool.vacuum_cleaner",
+    "category": "Home"
+  },
+  {
+    "id": "mirror",
+    "nameKey": "tool.mirror",
+    "category": "Home"
+  },
+  {
+    "id": "chair",
+    "nameKey": "tool.chair",
+    "category": "Home"
+  },
+  {
+    "id": "pillow",
+    "nameKey": "tool.pillow",
+    "category": "Home"
+  },
+  {
+    "id": "blanket",
+    "nameKey": "tool.blanket",
+    "category": "Home"
+  },
+  {
+    "id": "table",
+    "nameKey": "tool.table",
+    "category": "Home"
+  },
+  {
+    "id": "box",
+    "nameKey": "tool.box",
+    "category": "Home"
+  },
+  {
+    "id": "watering_can",
+    "nameKey": "tool.watering_can",
+    "category": "Outdoor"
+  },
+  {
+    "id": "garden_shovel",
+    "nameKey": "tool.garden_shovel",
+    "category": "Outdoor"
+  },
+  {
+    "id": "rake",
+    "nameKey": "tool.rake",
+    "category": "Outdoor"
+  },
+  {
+    "id": "hose",
+    "nameKey": "tool.hose",
+    "category": "Outdoor"
+  },
+  {
+    "id": "plant_pot",
+    "nameKey": "tool.plant_pot",
+    "category": "Outdoor"
+  },
+  {
+    "id": "wheelbarrow",
+    "nameKey": "tool.wheelbarrow",
+    "category": "Outdoor"
+  },
+  {
+    "id": "sun_hat",
+    "nameKey": "tool.sun_hat",
+    "category": "Outdoor"
+  },
+  {
+    "id": "towel",
+    "nameKey": "tool.towel",
+    "category": "Bathroom"
+  },
+  {
+    "id": "shampoo_bottle",
+    "nameKey": "tool.shampoo_bottle",
+    "category": "Bathroom"
+  },
+  {
+    "id": "bathtub_toys",
+    "nameKey": "tool.bathtub_toys",
+    "category": "Bathroom"
+  },
+  {
+    "id": "bath_sponge",
+    "nameKey": "tool.bath_sponge",
+    "category": "Bathroom"
+  },
+  {
+    "id": "inflatable_pool",
+    "nameKey": "tool.inflatable_pool",
+    "category": "WaterPlay"
+  },
+  {
+    "id": "float_ring",
+    "nameKey": "tool.float_ring",
+    "category": "WaterPlay"
+  },
+  {
+    "id": "water_gun",
+    "nameKey": "tool.water_gun",
+    "category": "WaterPlay"
+  },
+  {
+    "id": "beach_ball",
+    "nameKey": "tool.beach_ball",
+    "category": "WaterPlay"
+  },
+  {
+    "id": "goggles",
+    "nameKey": "tool.goggles",
+    "category": "WaterPlay"
+  },
+  {
+    "id": "baby_bottle",
+    "nameKey": "tool.baby_bottle",
+    "category": "BabyCare"
+  },
+  {
+    "id": "diaper",
+    "nameKey": "tool.diaper",
+    "category": "BabyCare"
+  },
+  {
+    "id": "changing_mat",
+    "nameKey": "tool.changing_mat",
+    "category": "BabyCare"
+  },
+  {
+    "id": "baby_wipes",
+    "nameKey": "tool.baby_wipes",
+    "category": "BabyCare"
+  },
+  {
+    "id": "baby_crib",
+    "nameKey": "tool.baby_crib",
+    "category": "BabyCare"
+  },
+  {
+    "id": "sleeping_bag",
+    "nameKey": "tool.sleeping_bag",
+    "category": "Sleep"
+  },
+  {
+    "id": "night_light",
+    "nameKey": "tool.night_light",
+    "category": "Sleep"
+  },
+  {
+    "id": "plush_blanket",
+    "nameKey": "tool.plush_blanket",
+    "category": "Sleep"
+  },
+  {
+    "id": "story_book",
+    "nameKey": "tool.story_book",
+    "category": "Sleep"
+  },
+  {
+    "id": "storybook",
+    "nameKey": "tool.storybook",
+    "category": "Stationery"
+  },
+  {
+    "id": "notebook",
+    "nameKey": "tool.notebook",
+    "category": "Stationery"
+  },
+  {
+    "id": "eraser",
+    "nameKey": "tool.eraser",
+    "category": "Everyday"
+  },
+  {
+    "id": "ruler",
+    "nameKey": "tool.ruler",
+    "category": "Stationery"
+  },
+  {
+    "id": "highlighter",
+    "nameKey": "tool.highlighter",
+    "category": "Stationery"
+  },
+  {
+    "id": "pen",
+    "nameKey": "tool.pen",
+    "category": "Stationery"
+  },
+  {
+    "id": "pencil_case",
+    "nameKey": "tool.pencil_case",
+    "category": "Stationery"
+  },
+  {
+    "id": "school_bag",
+    "nameKey": "tool.school_bag",
+    "category": "Stationery"
+  },
+  {
+    "id": "spray_bottle",
+    "nameKey": "tool.spray_bottle",
+    "category": "Cleaning"
+  },
+  {
+    "id": "cleaning_cloth",
+    "nameKey": "tool.cleaning_cloth",
+    "category": "Cleaning"
+  },
+  {
+    "id": "sponge",
+    "nameKey": "tool.sponge",
+    "category": "Cleaning"
+  },
+  {
+    "id": "bucket",
+    "nameKey": "tool.bucket",
+    "category": "Cleaning"
+  },
+  {
+    "id": "soccer_ball",
+    "nameKey": "tool.soccer_ball",
+    "category": "Sports"
+  },
+  {
+    "id": "basketball",
+    "nameKey": "tool.basketball",
+    "category": "Sports"
+  },
+  {
+    "id": "tennis_ball",
+    "nameKey": "tool.tennis_ball",
+    "category": "Sports"
+  },
+  {
+    "id": "cones",
+    "nameKey": "tool.cones",
+    "category": "Sports"
+  },
+  {
+    "id": "mini_goal",
+    "nameKey": "tool.mini_goal",
+    "category": "Sports"
+  },
+  {
+    "id": "balance_beam",
+    "nameKey": "tool.balance_beam",
+    "category": "Sports"
+  },
+  {
+    "id": "foam_mat",
+    "nameKey": "tool.foam_mat",
+    "category": "Sports"
+  },
+  {
+    "id": "stopwatch",
+    "nameKey": "tool.stopwatch",
+    "category": "Sports"
+  },
+  {
+    "id": "superhero_cape",
+    "nameKey": "tool.superhero_cape",
+    "category": "RolePlay"
+  },
+  {
+    "id": "princess_crown",
+    "nameKey": "tool.princess_crown",
+    "category": "RolePlay"
+  },
+  {
+    "id": "fireman_hat",
+    "nameKey": "tool.fireman_hat",
+    "category": "RolePlay"
+  },
+  {
+    "id": "doctor_coat",
+    "nameKey": "tool.doctor_coat",
+    "category": "RolePlay"
+  },
+  {
+    "id": "police_badge",
+    "nameKey": "tool.police_badge",
+    "category": "RolePlay"
+  },
+  {
+    "id": "pirate_patch",
+    "nameKey": "tool.pirate_patch",
+    "category": "RolePlay"
+  },
+  {
+    "id": "fairy_wings",
+    "nameKey": "tool.fairy_wings",
+    "category": "RolePlay"
+  },
+  {
+    "id": "toy_truck",
+    "nameKey": "tool.toy_truck",
+    "category": "Toys"
+  },
+  {
+    "id": "remote_car",
+    "nameKey": "tool.remote_car",
+    "category": "Toys"
+  },
+  {
+    "id": "helicopter_toy",
+    "nameKey": "tool.helicopter_toy",
+    "category": "Toys"
+  },
+  {
+    "id": "motorbike_toy",
+    "nameKey": "tool.motorbike_toy",
+    "category": "Toys"
+  },
+  {
+    "id": "space_shuttle",
+    "nameKey": "tool.space_shuttle",
+    "category": "Toys"
+  },
+  {
+    "id": "hand_puppet",
+    "nameKey": "tool.hand_puppet",
+    "category": "Toys"
+  },
+  {
+    "id": "animal_figures",
+    "nameKey": "tool.animal_figures",
+    "category": "Toys"
+  },
+  {
+    "id": "people_figures",
+    "nameKey": "tool.people_figures",
+    "category": "Toys"
+  },
+  {
+    "id": "counting_beads",
+    "nameKey": "tool.counting_beads",
+    "category": "STEM"
+  },
+  {
+    "id": "telescope",
+    "nameKey": "tool.telescope",
+    "category": "STEM"
+  },
+  {
+    "id": "magnet_set",
+    "nameKey": "tool.magnet_set",
+    "category": "STEM"
+  },
+  {
+    "id": "measuring_tape",
+    "nameKey": "tool.measuring_tape",
+    "category": "STEM"
+  },
+  {
+    "id": "geometric_shapes",
+    "nameKey": "tool.geometric_shapes",
+    "category": "STEM"
+  },
+  {
+    "id": "color_tiles",
+    "nameKey": "tool.color_tiles",
+    "category": "STEM"
+  },
+  {
+    "id": "clock_model",
+    "nameKey": "tool.clock_model",
+    "category": "STEM"
+  },
+  {
+    "id": "number_cards",
+    "nameKey": "tool.number_cards",
+    "category": "STEM"
+  },
+  {
+    "id": "toy_piano",
+    "nameKey": "tool.toy_piano",
+    "category": "Music"
+  },
+  {
+    "id": "triangle",
+    "nameKey": "tool.triangle",
+    "category": "Music"
+  },
+  {
+    "id": "drum",
+    "nameKey": "tool.drum",
+    "category": "Music"
+  },
+  {
+    "id": "flute",
+    "nameKey": "tool.flute",
+    "category": "Music"
+  },
+  {
+    "id": "harmonica",
+    "nameKey": "tool.harmonica",
+    "category": "Music"
+  },
+  {
+    "id": "castanets",
+    "nameKey": "tool.castanets",
+    "category": "Music"
+  },
+  {
+    "id": "whiteboard",
+    "nameKey": "tool.whiteboard",
+    "category": "Creative"
+  },
+  {
+    "id": "pinboard",
+    "nameKey": "tool.pinboard",
+    "category": "Creative"
+  },
+  {
+    "id": "display_easel",
+    "nameKey": "tool.display_easel",
+    "category": "Creative"
+  },
+  {
+    "id": "rock_collection",
+    "nameKey": "tool.rock_collection",
+    "category": "Nature"
+  },
+  {
+    "id": "leaf_samples",
+    "nameKey": "tool.leaf_samples",
+    "category": "Nature"
+  },
+  {
+    "id": "shells",
+    "nameKey": "tool.shells",
+    "category": "Nature"
+  },
+  {
+    "id": "insect_box",
+    "nameKey": "tool.insect_box",
+    "category": "Nature"
+  },
+  {
+    "id": "bird_call",
+    "nameKey": "tool.bird_call",
+    "category": "Nature"
+  },
+  {
+    "id": "binoculars",
+    "nameKey": "tool.binoculars",
+    "category": "Nature"
+  },
+  {
+    "id": "camping_lantern",
+    "nameKey": "tool.camping_lantern",
+    "category": "Nature"
+  },
+  {
+    "id": "confetti",
+    "nameKey": "tool.confetti",
+    "category": "Celebration"
+  },
+  {
+    "id": "party_hat",
+    "nameKey": "tool.party_hat",
+    "category": "Celebration"
+  },
+  {
+    "id": "streamers",
+    "nameKey": "tool.streamers",
+    "category": "Celebration"
+  },
+  {
+    "id": "gift_box",
+    "nameKey": "tool.gift_box",
+    "category": "Celebration"
+  },
+  {
+    "id": "birthday_banner",
+    "nameKey": "tool.birthday_banner",
+    "category": "Celebration"
+  },
+  {
+    "id": "squishy_toys",
+    "nameKey": "tool.squishy_toys",
+    "category": "Sensory"
+  },
+  {
+    "id": "sensory_bottles",
+    "nameKey": "tool.sensory_bottles",
+    "category": "Sensory"
+  },
+  {
+    "id": "bubble_tube",
+    "nameKey": "tool.bubble_tube",
+    "category": "Sensory"
+  },
+  {
+    "id": "light_panel",
+    "nameKey": "tool.light_panel",
+    "category": "Sensory"
+  },
+  {
+    "id": "weighted_blanket",
+    "nameKey": "tool.weighted_blanket",
+    "category": "Sensory"
+  },
+  {
+    "id": "tricycle",
+    "nameKey": "tool.tricycle",
+    "category": "Movement"
+  },
+  {
+    "id": "skateboard",
+    "nameKey": "tool.skateboard",
+    "category": "Movement"
+  },
+  {
+    "id": "pull_wagon",
+    "nameKey": "tool.pull_wagon",
+    "category": "Movement"
+  },
+  {
+    "id": "bouncing_ball",
+    "nameKey": "tool.bouncing_ball",
+    "category": "Movement"
+  },
+  {
+    "id": "tunnel_tube",
+    "nameKey": "tool.tunnel_tube",
+    "category": "Movement"
+  },
+  {
+    "id": "lunchbox",
+    "nameKey": "tool.lunchbox",
+    "category": "Daily"
+  },
+  {
+    "id": "water_bottle",
+    "nameKey": "tool.water_bottle",
+    "category": "Daily"
+  },
+  {
+    "id": "watch",
+    "nameKey": "tool.watch",
+    "category": "Daily"
+  },
+  {
+    "id": "calendar_chart",
+    "nameKey": "tool.calendar_chart",
+    "category": "Daily"
+  },
+  {
+    "id": "weather_wheel",
+    "nameKey": "tool.weather_wheel",
+    "category": "Daily"
+  },
+  {
+    "id": "chore_chart",
+    "nameKey": "tool.chore_chart",
+    "category": "Daily"
+  },
+  {
+    "id": "tablet",
+    "nameKey": "tool.tablet",
+    "category": "Media"
+  },
+  {
+    "id": "projector",
+    "nameKey": "tool.projector",
+    "category": "Media"
+  },
+  {
+    "id": "microphone",
+    "nameKey": "tool.microphone",
+    "category": "Media"
+  },
+  {
+    "id": "headphones",
+    "nameKey": "tool.headphones",
+    "category": "Media"
+  },
+  {
+    "id": "speaker",
+    "nameKey": "tool.speaker",
+    "category": "Media"
+  },
+  {
+    "id": "hand_sanitizer",
+    "nameKey": "tool.hand_sanitizer",
+    "category": "Daily"
+  },
+  {
+    "id": "face_mask",
+    "nameKey": "tool.face_mask",
+    "category": "Daily"
+  },
+  {
+    "id": "doctor_mask",
+    "nameKey": "tool.doctor_mask",
+    "category": "RolePlay"
+  },
+  {
+    "id": "clipboard",
+    "nameKey": "tool.clipboard",
+    "category": "RolePlay"
+  },
+  {
+    "id": "thermometer",
+    "nameKey": "tool.thermometer",
+    "category": "RolePlay"
+  },
+  {
+    "id": "pattern_scissors",
+    "nameKey": "tool.pattern_scissors",
+    "category": "Creative"
+  },
+  {
+    "id": "paper_punch",
+    "nameKey": "tool.paper_punch",
+    "category": "Creative"
+  },
+  {
+    "id": "colored_tape",
+    "nameKey": "tool.colored_tape",
+    "category": "Creative"
+  },
+  {
+    "id": "sticker_set",
+    "nameKey": "tool.sticker_set",
+    "category": "Creative"
+  },
+  {
+    "id": "wooden_puzzle",
+    "nameKey": "tool.wooden_puzzle",
+    "category": "Montessori"
+  },
+  {
+    "id": "knob_puzzle",
+    "nameKey": "tool.knob_puzzle",
+    "category": "Montessori"
+  },
+  {
+    "id": "stacking_rings",
+    "nameKey": "tool.stacking_rings",
+    "category": "Montessori"
+  },
+  {
+    "id": "number_board",
+    "nameKey": "tool.number_board",
+    "category": "Montessori"
+  },
+  {
+    "id": "toy_stove",
+    "nameKey": "tool.toy_stove",
+    "category": "MiniHome"
+  },
+  {
+    "id": "toy_sink",
+    "nameKey": "tool.toy_sink",
+    "category": "MiniHome"
+  },
+  {
+    "id": "toy_fridge",
+    "nameKey": "tool.toy_fridge",
+    "category": "MiniHome"
+  },
+  {
+    "id": "toy_iron",
+    "nameKey": "tool.toy_iron",
+    "category": "MiniHome"
+  },
+  {
+    "id": "toy_washing_machine",
+    "nameKey": "tool.toy_washing_machine",
+    "category": "MiniHome"
+  },
+  {
+    "id": "cleaning_cart",
+    "nameKey": "tool.cleaning_cart",
+    "category": "MiniHome"
+  },
+  {
+    "id": "space_helmet",
+    "nameKey": "tool.space_helmet",
+    "category": "Fantasy"
+  },
+  {
+    "id": "telescope_toy",
+    "nameKey": "tool.telescope_toy",
+    "category": "Fantasy"
+  },
+  {
+    "id": "spaceship_toy",
+    "nameKey": "tool.spaceship_toy",
+    "category": "Fantasy"
+  },
+  {
+    "id": "castle_blocks",
+    "nameKey": "tool.castle_blocks",
+    "category": "Fantasy"
+  },
+  {
+    "id": "submarine_toy",
+    "nameKey": "tool.submarine_toy",
+    "category": "Fantasy"
+  },
+  {
+    "id": "animal_masks",
+    "nameKey": "tool.animal_masks",
+    "category": "Animals"
+  },
+  {
+    "id": "pet_carrier_toy",
+    "nameKey": "tool.pet_carrier_toy",
+    "category": "Animals"
+  },
+  {
+    "id": "vet_kit",
+    "nameKey": "tool.vet_kit",
+    "category": "Animals"
+  },
+  {
+    "id": "toy_zoo",
+    "nameKey": "tool.toy_zoo",
+    "category": "Animals"
+  },
+  {
+    "id": "barn_toy",
+    "nameKey": "tool.barn_toy",
+    "category": "Animals"
+  },
+  {
+    "id": "flashlight",
+    "nameKey": "tool.flashlight",
+    "category": "Accessories"
+  },
+  {
+    "id": "mini_binoculars",
+    "nameKey": "tool.mini_binoculars",
+    "category": "Accessories"
+  },
+  {
+    "id": "timer",
+    "nameKey": "tool.timer",
+    "category": "Accessories"
+  },
+  {
+    "id": "raincoat",
+    "nameKey": "tool.raincoat",
+    "category": "Accessories"
+  },
+  {
+    "id": "bug_net",
+    "nameKey": "tool.bug_net",
+    "category": "Accessories"
+  },
+  {
+    "id": "puzzle_board",
+    "nameKey": "tool.puzzle_board",
+    "category": "Accessories"
+  },
+  {
+    "id": "chalkboard",
+    "nameKey": "tool.chalkboard",
+    "category": "Accessories"
+  },
+  {
+    "id": "pinwheel",
+    "nameKey": "tool.pinwheel",
+    "category": "Accessories"
+  },
+  {
+    "id": "weather_station",
+    "nameKey": "tool.weather_station",
+    "category": "Accessories"
+  },
+  {
+    "id": "toy_mirror",
+    "nameKey": "tool.toy_mirror",
+    "category": "Accessories"
+  },
+  {
+    "id": "toy_camera",
+    "nameKey": "tool.toy_camera",
+    "category": "Accessories"
+  },
+  {
+    "id": "measuring_cups",
+    "nameKey": "tool.measuring_cups",
+    "category": "Accessories"
+  },
+  {
+    "id": "magnets",
+    "nameKey": "tool.magnets",
+    "category": "Accessories"
+  },
+  {
+    "id": "plastic_fork",
+    "nameKey": "tool.plastic_fork",
+    "category": "Everyday"
+  },
+  {
+    "id": "metal_spoon",
+    "nameKey": "tool.metal_spoon",
+    "category": "Everyday"
+  },
+  {
+    "id": "plastic_plate",
+    "nameKey": "tool.plastic_plate",
+    "category": "Everyday"
+  },
+  {
+    "id": "plastic_cup",
+    "nameKey": "tool.plastic_cup",
+    "category": "Everyday"
+  },
+  {
+    "id": "empty_box",
+    "nameKey": "tool.empty_box",
+    "category": "Everyday"
+  },
+  {
+    "id": "tissue_box",
+    "nameKey": "tool.tissue_box",
+    "category": "Everyday"
+  },
+  {
+    "id": "toilet_roll",
+    "nameKey": "tool.toilet_roll",
+    "category": "Everyday"
+  },
+  {
+    "id": "paper_towel_roll",
+    "nameKey": "tool.paper_towel_roll",
+    "category": "Everyday"
+  },
+  {
+    "id": "soda_bottle",
+    "nameKey": "tool.soda_bottle",
+    "category": "Everyday"
+  },
+  {
+    "id": "water_bottle_cap",
+    "nameKey": "tool.water_bottle_cap",
+    "category": "Everyday"
+  },
+  {
+    "id": "yarn_pieces",
+    "nameKey": "tool.yarn_pieces",
+    "category": "Everyday"
+  },
+  {
+    "id": "cloth_scraps",
+    "nameKey": "tool.cloth_scraps",
+    "category": "Everyday"
+  },
+  {
+    "id": "used_envelopes",
+    "nameKey": "tool.used_envelopes",
+    "category": "Everyday"
+  },
+  {
+    "id": "recycled_paper",
+    "nameKey": "tool.recycled_paper",
+    "category": "Everyday"
+  },
+  {
+    "id": "magazine_pages",
+    "nameKey": "tool.magazine_pages",
+    "category": "Everyday"
+  },
+  {
+    "id": "old_calendar",
+    "nameKey": "tool.old_calendar",
+    "category": "Everyday"
+  },
+  {
+    "id": "plastic_bag",
+    "nameKey": "tool.plastic_bag",
+    "category": "Everyday"
+  },
+  {
+    "id": "rubber_bands",
+    "nameKey": "tool.rubber_bands",
+    "category": "Everyday"
+  },
+  {
+    "id": "cotton_balls",
+    "nameKey": "tool.cotton_balls",
+    "category": "Everyday"
+  },
+  {
+    "id": "empty_can",
+    "nameKey": "tool.empty_can",
+    "category": "Everyday"
+  },
+  {
+    "id": "plastic_container",
+    "nameKey": "tool.plastic_container",
+    "category": "Everyday"
+  },
+  {
+    "id": "shoe_box",
+    "nameKey": "tool.shoe_box",
+    "category": "Everyday"
+  },
+  {
+    "id": "egg_carton",
+    "nameKey": "tool.egg_carton",
+    "category": "Everyday"
+  },
+  {
+    "id": "bread_tag",
+    "nameKey": "tool.bread_tag",
+    "category": "Everyday"
+  },
+  {
+    "id": "milk_carton",
+    "nameKey": "tool.milk_carton",
+    "category": "Everyday"
+  },
+  {
+    "id": "bubble_wrap",
+    "nameKey": "tool.bubble_wrap",
+    "category": "Everyday"
+  },
+  {
+    "id": "foil_sheet",
+    "nameKey": "tool.foil_sheet",
+    "category": "Everyday"
+  },
+  {
+    "id": "plastic_straw",
+    "nameKey": "tool.plastic_straw",
+    "category": "Everyday"
+  },
+  {
+    "id": "old_tshirt",
+    "nameKey": "tool.old_tshirt",
+    "category": "Everyday"
+  },
+  {
+    "id": "tin_lid",
+    "nameKey": "tool.tin_lid",
+    "category": "Everyday"
+  },
+  {
+    "id": "dry_pasta",
+    "nameKey": "tool.dry_pasta",
+    "category": "Everyday"
+  },
+  {
+    "id": "tape_roll",
+    "nameKey": "tool.tape_roll",
+    "category": "Everyday"
+  },
+  {
+    "id": "straws_bundle",
+    "nameKey": "tool.straws_bundle",
+    "category": "Everyday"
+  },
+  {
+    "id": "old_magnet",
+    "nameKey": "tool.old_magnet",
+    "category": "Everyday"
+  },
+  {
+    "id": "dry_beans",
+    "nameKey": "tool.dry_beans",
+    "category": "Everyday"
+  },
+  {
+    "id": "coin_collection",
+    "nameKey": "tool.coin_collection",
+    "category": "Everyday"
+  },
+  {
+    "id": "pencil",
+    "nameKey": "tool.pencil",
+    "category": "Everyday"
+  },
+  {
+    "id": "mirror_piece",
+    "nameKey": "tool.mirror_piece",
+    "category": "Everyday"
+  },
+  {
+    "id": "hair_brush",
+    "nameKey": "tool.hair_brush",
+    "category": "Everyday"
+  },
+  {
+    "id": "tissue_paper",
+    "nameKey": "tool.tissue_paper",
+    "category": "Everyday"
+  },
+  {
+    "id": "old_magnet_letters",
+    "nameKey": "tool.old_magnet_letters",
+    "category": "Everyday"
+  },
+  {
+    "id": "recycled_bag",
+    "nameKey": "tool.recycled_bag",
+    "category": "Everyday"
+  },
+  {
+    "id": "paper_cup",
+    "nameKey": "tool.paper_cup",
+    "category": "Everyday"
+  },
+  {
+    "id": "old_postcard",
+    "nameKey": "tool.old_postcard",
+    "category": "Everyday"
+  },
+  {
+    "id": "key_ring",
+    "nameKey": "tool.key_ring",
+    "category": "Everyday"
+  },
+  {
+    "id": "paper_plate",
+    "nameKey": "tool.paper_plate",
+    "category": "Everyday"
+  },
+  {
+    "id": "ribbon",
+    "nameKey": "tool.ribbon",
+    "category": "Everyday"
+  },
+  {
+    "id": "empty_jar",
+    "nameKey": "tool.empty_jar",
+    "category": "Everyday"
+  },
+  {
+    "id": "stickers_leftover",
+    "nameKey": "tool.stickers_leftover",
+    "category": "Everyday"
+  },
+  {
+    "id": "matchbox",
+    "nameKey": "tool.matchbox",
+    "category": "Everyday"
+  },
+  {
+    "id": "old_glasses",
+    "nameKey": "tool.old_glasses",
+    "category": "Everyday"
+  },
+  {
+    "id": "plastic_ring",
+    "nameKey": "tool.plastic_ring",
+    "category": "Everyday"
+  },
+  {
+    "id": "napkin",
+    "nameKey": "tool.napkin",
+    "category": "Everyday"
+  },
+  {
+    "id": "old_calendar_page",
+    "nameKey": "tool.old_calendar_page",
+    "category": "Everyday"
+  },
+  {
+    "id": "chalk_piece",
+    "nameKey": "tool.chalk_piece",
+    "category": "Everyday"
+  },
+  {
+    "id": "plastic_spoon",
+    "nameKey": "tool.plastic_spoon",
+    "category": "Everyday"
+  },
+  {
+    "id": "plastic_bottle",
+    "nameKey": "tool.plastic_bottle",
+    "category": "Everyday"
+  },
+  {
+    "id": "thread_spool",
+    "nameKey": "tool.thread_spool",
+    "category": "Everyday"
+  },
+  {
+    "id": "coffee_filter",
+    "nameKey": "tool.coffee_filter",
+    "category": "Everyday"
+  },
+  {
+    "id": "old_tie",
+    "nameKey": "tool.old_tie",
+    "category": "Everyday"
+  },
+  {
+    "id": "shoelace",
+    "nameKey": "tool.shoelace",
+    "category": "Everyday"
+  },
+  {
+    "id": "bottle_cap",
+    "nameKey": "tool.bottle_cap",
+    "category": "Everyday"
+  },
+  {
+    "id": "jar_lid",
+    "nameKey": "tool.jar_lid",
+    "category": "Everyday"
+  },
+  {
+    "id": "bubble_wrap_strip",
+    "nameKey": "tool.bubble_wrap_strip",
+    "category": "Everyday"
+  },
+  {
+    "id": "toilet_paper_roll",
+    "nameKey": "tool.toilet_paper_roll",
+    "category": "Everyday"
+  },
+  {
+    "id": "old_greeting_card",
+    "nameKey": "tool.old_greeting_card",
+    "category": "Everyday"
+  },
+  {
+    "id": "fabric_ribbon",
+    "nameKey": "tool.fabric_ribbon",
+    "category": "Everyday"
+  },
+  {
+    "id": "chalkboard_piece",
+    "nameKey": "tool.chalkboard_piece",
+    "category": "Everyday"
+  },
+  {
+    "id": "string_bundle",
+    "nameKey": "tool.string_bundle",
+    "category": "Everyday"
+  },
+  {
+    "id": "pebbles",
+    "nameKey": "tool.pebbles",
+    "category": "Everyday"
+  },
+  {
+    "id": "pinecone",
+    "nameKey": "tool.pinecone",
+    "category": "Everyday"
+  }
+]
