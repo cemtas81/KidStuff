@@ -1,0 +1,18 @@
+[
+  {
+    "id": "spoon",
+    "nameKey": "tool.spoon",
+    "category": "Kitchen"
+  },
+  {
+    "id": "fork",
+    "nameKey": "tool.fork",
+    "category": "Kitchen"
+  },
+  {
+    "id": "knife_child_safe",
+    "nameKey": "tool.knife_child_safe",
+    "category": "Kitchen"
+  }
+
+]
