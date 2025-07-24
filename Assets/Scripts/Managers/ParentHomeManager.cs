@@ -22,7 +22,7 @@ public class ParentHomeManager : MonoBehaviour
 
     public List<string> parents = new List<string> { "Parent 1", "Parent 2" };
     public List<string> children = new List<string> { "Child 1", "Child 2", "Child 3" };
-    public List<Tool> tools = new List<Tool>();
+    private List<Tool> tools = new List<Tool>();
 
     void Start()
     {

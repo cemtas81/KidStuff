@@ -4399,7 +4399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.9921569, g: 0.81568635, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6826,16 +6826,6 @@ MonoBehaviour:
   - Child 1
   - Child 2
   - Child 3
-  tools:
-  - id: 
-    nameKey: 
-    category: 
-  - id: 
-    nameKey: 
-    category: 
-  - id: 
-    nameKey: 
-    category: 
 --- !u!1 &909553412
 GameObject:
   m_ObjectHideFlags: 0
@@ -7967,7 +7957,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 1
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
