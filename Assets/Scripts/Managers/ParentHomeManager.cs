@@ -1,7 +1,9 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System.IO;
+using UnityEngine.Networking;
 
 [System.Serializable]
 public class Tool
@@ -26,29 +28,54 @@ public class ParentHomeManager : MonoBehaviour
 
     void Start()
     {
-        LoadToolsFromJson();
-
-        PopulateDropdown(parentsDropdown, parents);
-        PopulateDropdown(childrenDropdown, children);
-
-        PopulateToolDropdown(toolDropdown1);
-        PopulateToolDropdown(toolDropdown2);
-        PopulateToolDropdown(toolDropdown3);
-        PopulateToolDropdown(toolDropdown4);
+        StartCoroutine(LoadToolsFromJsonCoroutine());
     }
 
-    void LoadToolsFromJson()
+    IEnumerator LoadToolsFromJsonCoroutine()
     {
         string path = Path.Combine(Application.streamingAssetsPath, "tools.json");
+        string json = null;
+
+#if UNITY_ANDROID && !UNITY_EDITOR
+    using (UnityWebRequest www = UnityWebRequest.Get(path))
+    {
+        yield return www.SendWebRequest();
+        if (www.result == UnityWebRequest.Result.Success)
+        {
+            json = www.downloadHandler.text;
+        }
+        else
+        {
+            Debug.LogError("Failed to load tools.json: " + www.error);
+            yield break; // <--- This prevents the warning
+        }
+    }
+#else
         if (File.Exists(path))
         {
-            string json = File.ReadAllText(path);
-            tools = JsonHelper.FromJson<Tool>(json);
+            json = File.ReadAllText(path);
         }
         else
         {
             Debug.LogError("tools.json not found at path: " + path);
+            yield break; // <--- This prevents the warning
         }
+#endif
+
+        if (!string.IsNullOrEmpty(json))
+        {
+            tools = JsonHelper.FromJson<Tool>(json);
+
+            PopulateDropdown(parentsDropdown, parents);
+            PopulateDropdown(childrenDropdown, children);
+
+            PopulateToolDropdown(toolDropdown1);
+            PopulateToolDropdown(toolDropdown2);
+            PopulateToolDropdown(toolDropdown3);
+            PopulateToolDropdown(toolDropdown4);
+        }
+
+        yield break; // <--- Ensures all code paths return a value
     }
 
     void PopulateDropdown(TMP_Dropdown dropdown, List<string> items)
