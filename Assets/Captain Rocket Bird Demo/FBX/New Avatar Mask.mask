@@ -1,0 +1,283 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Avatar Mask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Bird 1
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.002
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.002/spine.001
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.002/spine.001/spine
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.002/spine.001/spine/t_feather.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.002/spine.001/spine/t_feather.L/t_feather.L_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.002/spine.001/spine/t_feather.L/t_feather.L_end/t_feather.L_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.002/spine.001/spine/t_feather.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.002/spine.001/spine/t_feather.R/t_feather.R_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.002/spine.001/spine/t_feather.R/t_feather.R_end/t_feather.R_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/pelvis.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/pelvis.L/pelvis.L_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/pelvis.L/pelvis.L_end/pelvis.L_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/pelvis.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/pelvis.R/pelvis.R_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/pelvis.R/pelvis.R_end/pelvis.R_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L/w_feather.004.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L/w_feather.004.L/w_feather.004.L_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L/w_feather.004.L/w_feather.004.L_end/w_feather.004.L_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L/Wing.001.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L/Wing.001.L/w_feather.003.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L/Wing.001.L/w_feather.003.L/w_feather.003.L_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L/Wing.001.L/w_feather.003.L/w_feather.003.L_end/w_feather.003.L_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L/Wing.001.L/Wing.002.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L/Wing.001.L/Wing.002.L/w_feather.001.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L/Wing.001.L/Wing.002.L/w_feather.001.L/w_feather.001.L_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L/Wing.001.L/Wing.002.L/w_feather.001.L/w_feather.001.L_end/w_feather.001.L_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L/Wing.001.L/Wing.002.L/w_feather.002.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L/Wing.001.L/Wing.002.L/w_feather.002.L/w_feather.002.L_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.L/Wing.L/Wing.001.L/Wing.002.L/w_feather.002.L/w_feather.002.L_end/w_feather.002.L_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R/w_feather.004.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R/w_feather.004.R/w_feather.004.R_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R/w_feather.004.R/w_feather.004.R_end/w_feather.004.R_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R/Wing.001.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R/Wing.001.R/w_feather.003.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R/Wing.001.R/w_feather.003.R/w_feather.003.R_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R/Wing.001.R/w_feather.003.R/w_feather.003.R_end/w_feather.003.R_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R/Wing.001.R/Wing.002.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R/Wing.001.R/Wing.002.R/w_feather.001.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R/Wing.001.R/Wing.002.R/w_feather.001.R/w_feather.001.R_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R/Wing.001.R/Wing.002.R/w_feather.001.R/w_feather.001.R_end/w_feather.001.R_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R/Wing.001.R/Wing.002.R/w_feather.002.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R/Wing.001.R/Wing.002.R/w_feather.002.R/w_feather.002.R_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/shoulder.R/Wing.R/Wing.001.R/Wing.002.R/w_feather.002.R/w_feather.002.R_end/w_feather.002.R_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/beak.001.T
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/beak.001.T/beak.002.T
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/beak.001.T/beak.002.T/beak.002.T_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/beak.001.T/beak.002.T/beak.002.T_end/beak.002.T_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/beak_001.B
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/beak_001.B/beak.002.B
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/beak_001.B/beak.002.B/beak.002.B_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/beak_001.B/beak.002.B/beak.002.B_end/beak.002.B_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/beak_001.B/tongue.001.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/beak_001.B/tongue.001.L/tongue.002.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/beak_001.B/tongue.001.L/tongue.002.L/tongue.003.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/beak_001.B/tongue.001.L/tongue.002.L/tongue.003.L/tongue.003.L_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/beak_001.B/tongue.001.L/tongue.002.L/tongue.003.L/tongue.003.L_end/tongue.003.L_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/eye.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/eye.L/eye.L_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/eye.L/eye.L_end/eye.L_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/eye.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/eye.R/eye.R_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/eye.R/eye.R_end/eye.R_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/n_feather.001.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/n_feather.001.L/n_feather.001.L_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/n_feather.001.L/n_feather.001.L_end/n_feather.001.L_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/n_feather.001.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/n_feather.001.R/n_feather.001.R_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/n_feather.001.R/n_feather.001.R_end/n_feather.001.R_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/skull.006.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/skull.006.L/skull.006.L_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/skull.006.L/skull.006.L_end/skull.006.L_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/skull.006.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/skull.006.R/skull.006.R_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/spine.005/spine.006/neck.001/neck.002/head/skull.006.R/skull.006.R_end/skull.006.R_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/t_thumb.001.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/t_thumb.001.L/t_thumb.002.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/t_thumb.001.L/t_thumb.002.L/t_thumb.002.L_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/t_thumb.001.L/t_thumb.002.L/t_thumb.002.L_end/t_thumb.002.L_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_index.001.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_index.001.L/t_index.002.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_index.001.L/t_index.002.L/t_index.003.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_index.001.L/t_index.002.L/t_index.003.L/t_index.003.L_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_index.001.L/t_index.002.L/t_index.003.L/t_index.003.L_end/t_index.003.L_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_middle.001.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_middle.001.L/t_middle.002.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_middle.001.L/t_middle.002.L/t_middle.003.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_middle.001.L/t_middle.002.L/t_middle.003.L/t_middle.003.L_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_middle.001.L/t_middle.002.L/t_middle.003.L/t_middle.003.L_end/t_middle.003.L_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_ring.001.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_ring.001.L/t_ring.002.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_ring.001.L/t_ring.002.L/t_ring.003.L
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_ring.001.L/t_ring.002.L/t_ring.003.L/t_ring.003.L_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.L/shin.L/foot.L/toe.L/toes_parent.L/t_ring.001.L/t_ring.002.L/t_ring.003.L/t_ring.003.L_end/t_ring.003.L_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/t_thumb.001.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/t_thumb.001.R/t_thumb.002.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/t_thumb.001.R/t_thumb.002.R/t_thumb.002.R_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/t_thumb.001.R/t_thumb.002.R/t_thumb.002.R_end/t_thumb.002.R_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_index.001.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_index.001.R/t_index.002.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_index.001.R/t_index.002.R/t_index.003.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_index.001.R/t_index.002.R/t_index.003.R/t_index.003.R_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_index.001.R/t_index.002.R/t_index.003.R/t_index.003.R_end/t_index.003.R_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_middle.001.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_middle.001.R/t_middle.002.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_middle.001.R/t_middle.002.R/t_middle.003.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_middle.001.R/t_middle.002.R/t_middle.003.R/t_middle.003.R_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_middle.001.R/t_middle.002.R/t_middle.003.R/t_middle.003.R_end/t_middle.003.R_end_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_ring.001.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_ring.001.R/t_ring.002.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_ring.001.R/t_ring.002.R/t_ring.003.R
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_ring.001.R/t_ring.002.R/t_ring.003.R/t_ring.003.R_end
+    m_Weight: 1
+  - m_Path: Bird 1/spine.003/spine.004/thigh.R/shin.R/foot.R/toe.R/toes_parent.R/t_ring.001.R/t_ring.002.R/t_ring.003.R/t_ring.003.R_end/t_ring.003.R_end_end
+    m_Weight: 1
+  - m_Path: BIRD 1
+    m_Weight: 1
