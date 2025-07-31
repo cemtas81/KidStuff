@@ -87,7 +87,7 @@ public class ParentLoginUI : MonoBehaviour
                 return;
             }
             // Login successful, proceed to ParentHome scene
-            SceneManager.LoadScene(1);
+            //SceneManager.LoadScene(1);
         }, System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext());
     }
 

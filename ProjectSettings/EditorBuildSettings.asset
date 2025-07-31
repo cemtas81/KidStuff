@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ParentHome.unity
     guid: d70cb0d8edb7372408c1168d8636c743
   - enabled: 1
+    path: Assets/Scenes/ChildSlidingScenes.unity
+    guid: 734493772fee09e4193f3c9c7dfef288
+  - enabled: 1
     path: Assets/Scenes/ChildLogin.unity
     guid: b8c1ba3d7c20e114bbd8469eaee747d7
   - enabled: 1
