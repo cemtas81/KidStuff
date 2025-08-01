@@ -5,13 +5,13 @@ using TMPro;
 using System.IO;
 using UnityEngine.Networking;
 
-[System.Serializable]
-public class Tool
-{
-    public string id;
-    public string nameKey;
-    public string category;
-}
+//[System.Serializable]
+//public class Tool
+//{
+//    public string id;
+//    public string nameKey;
+//    public string category;
+//}
 
 public class ParentHomeManager : MonoBehaviour
 {
@@ -62,18 +62,18 @@ public class ParentHomeManager : MonoBehaviour
         }
 #endif
 
-        if (!string.IsNullOrEmpty(json))
-        {
-            tools = JsonHelper.FromJson<Tool>(json);
+        //if (!string.IsNullOrEmpty(json))
+        //{
+        //    tools = JsonHelper.FromJson<Tool>(json);
 
-            PopulateDropdown(parentsDropdown, parents);
-            PopulateDropdown(childrenDropdown, children);
+        //    PopulateDropdown(parentsDropdown, parents);
+        //    PopulateDropdown(childrenDropdown, children);
 
-            PopulateToolDropdown(toolDropdown1);
-            PopulateToolDropdown(toolDropdown2);
-            PopulateToolDropdown(toolDropdown3);
-            PopulateToolDropdown(toolDropdown4);
-        }
+        //    PopulateToolDropdown(toolDropdown1);
+        //    PopulateToolDropdown(toolDropdown2);
+        //    PopulateToolDropdown(toolDropdown3);
+        //    PopulateToolDropdown(toolDropdown4);
+        //}
 
         yield break; // <--- Ensures all code paths return a value
     }
@@ -100,18 +100,18 @@ public class ParentHomeManager : MonoBehaviour
 }
 
 // Helper to parse a JSON array with Unity's JsonUtility
-public static class JsonHelper
-{
-    public static List<T> FromJson<T>(string json)
-    {
-        string newJson = "{ \"array\": " + json + "}";
-        Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(newJson);
-        return new List<T>(wrapper.array);
-    }
+//public static class JsonHelper
+//{
+//    public static List<T> FromJson<T>(string json)
+//    {
+//        string newJson = "{ \"array\": " + json + "}";
+//        Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(newJson);
+//        return new List<T>(wrapper.array);
+//    }
 
-    [System.Serializable]
-    private class Wrapper<T>
-    {
-        public T[] array;
-    }
-}
+//    [System.Serializable]
+//    private class Wrapper<T>
+//    {
+//        public T[] array;
+//    }
+//}

@@ -1,5 +1,5 @@
 [
-  { "id": "painting"', "nameKey: "hobby.painting", "category": "Art' },
+  { "id": "painting", "nameKey": "hobby.painting", "category": "Art" },
   { "id": "drawing", "nameKey": "hobby.drawing", "category": "Art" },
   { "id": "clay_modeling", "nameKey": "hobby.clay_modeling", "category": "Art" },
   { "id": "coloring", "nameKey": "hobby.coloring", "category": "Art" },
@@ -315,5 +315,5 @@
   { "id": "adventure", "nameKey": "hobby.adventure", "category": "Others" },
   { "id": "journalism", "nameKey": "hobby.journalism", "category": "Others" },
   { "id": "film_making", "nameKey": "hobby.film_making", "category": "Others" },
-  { "id": "memory_keeping", "nameKey": "hobby.memory_keeping", "category": "Others" },
+  { "id": "memory_keeping", "nameKey": "hobby.memory_keeping", "category": "Others" }
 ]

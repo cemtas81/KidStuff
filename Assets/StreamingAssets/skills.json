@@ -267,5 +267,5 @@
   { "id": "rhythm", "nameKey": "skill.rhythm", "category": "Academic/Foundational" },
   { "id": "basic_addition", "nameKey": "skill.basic_addition", "category": "Academic/Foundational" },
   { "id": "basic_subtraction", "nameKey": "skill.basic_subtraction", "category": "Academic/Foundational" },
-  { "id": "letter_sounds_recognition", "nameKey": "skill.letter_sounds_recognition", "category": "Academic/Foundational" },
+  { "id": "letter_sounds_recognition", "nameKey": "skill.letter_sounds_recognition", "category": "Academic/Foundational" }
 ]
