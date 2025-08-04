@@ -955,13 +955,13 @@ MonoBehaviour:
   m_MultiSelect: 0
   m_Options:
     m_Options:
-    - m_Text: Female
-      m_Image: {fileID: 0}
-      m_Color: {r: 0.48661375, g: 1, b: 0, a: 1}
     - m_Text: Male
       m_Image: {fileID: 0}
       m_Color: {r: 0.48661375, g: 1, b: 0, a: 1}
-    - m_Text: Do not want to specify
+    - m_Text: Female
+      m_Image: {fileID: 0}
+      m_Color: {r: 0.48661375, g: 1, b: 0, a: 1}
+    - m_Text: Doesn't Matter
       m_Image: {fileID: 0}
       m_Color: {r: 0.48661375, g: 1, b: 0, a: 1}
   m_OnValueChanged:
@@ -2766,31 +2766,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 360407172}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1452589632}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 29159351}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &360407172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5912,6 +5888,8 @@ MonoBehaviour:
   passwordInput: {fileID: 1244235532}
   loginButton: {fileID: 360407171}
   feedbackText: {fileID: 751530740}
+  ProfileEdit: {fileID: 29159351}
+  logInScreen: {fileID: 1452589632}
 --- !u!1 &1049939207
 GameObject:
   m_ObjectHideFlags: 0
@@ -7796,12 +7774,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentNameInput: {fileID: 218013381}
   parentAgeInput: {fileID: 2031859363}
-  parentGenderDropdown: {fileID: 0}
+  parentGenderDropdown: {fileID: 108567346}
   childGenderDropdown: {fileID: 0}
   childNameInput: {fileID: 0}
   childAgeInput: {fileID: 0}
   childHobbiesInput: {fileID: 0}
-  dataManager: {fileID: 907283427}
 --- !u!4 &1750768907
 Transform:
   m_ObjectHideFlags: 0

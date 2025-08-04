@@ -12,10 +12,14 @@ public class UIManager : MonoBehaviour
 
     public TMP_InputField childNameInput;
     public TMP_InputField childAgeInput;
-    //public TMP_InputField childGenderInput;
     public TMP_InputField childHobbiesInput;
 
-    public ParentChildDataManager dataManager;
+    private ParentChildDataManager dataManager;
+    
+    private void Start()
+    {
+        dataManager = ParentChildDataManager.Instance;
+    }
 
     public void OnParentNameChanged() => dataManager.SetParentName(parentNameInput.text);
 
@@ -27,10 +31,12 @@ public class UIManager : MonoBehaviour
 
     public void OnParentGenderChanged()
     {
-        string selectedGender = parentGenderDropdown.options[parentGenderDropdown.value].text;
-        dataManager.SetParentGender(selectedGender);
+        // Önce veriyi kaydet, sonra görsel güncellemeyi yap
+        dataManager.SetParentGender(parentGenderDropdown.value);
+        parentGenderDropdown.RefreshShownValue();
+        
+        Debug.Log($"Parent gender changed to: {parentGenderDropdown.value}");
     }
-
 
     public void OnChildNameChanged() => dataManager.SetChildName(childNameInput.text);
 
@@ -42,9 +48,13 @@ public class UIManager : MonoBehaviour
 
     public void OnChildGenderChanged()
     {
-        string selectedGender = childGenderDropdown.options[childGenderDropdown.value].text;
-        dataManager.SetChildGender(selectedGender);
+        // Önce veriyi kaydet, sonra görsel güncellemeyi yap
+        dataManager.SetChildGender(childGenderDropdown.value);
+        childGenderDropdown.RefreshShownValue();
+        
+        Debug.Log($"Child gender changed to: {childGenderDropdown.value}");
     }
+
     public void OnChildHobbiesChanged()
     {
         var hobbies = childHobbiesInput.text

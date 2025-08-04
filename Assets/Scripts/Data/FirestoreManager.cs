@@ -11,7 +11,7 @@ public class ChildData
     [FirestoreProperty]
     public int Age { get; set; }
     [FirestoreProperty]
-    public string Gender { get; set; }
+    public int Gender { get; set; }
     [FirestoreProperty]
     public List<string> Hobbies { get; set; }
 }
@@ -24,7 +24,7 @@ public class ParentData
     [FirestoreProperty]
     public int Age { get; set; }
     [FirestoreProperty]
-    public string Gender { get; set; }
+    public int Gender { get; set; }
     [FirestoreProperty]
     public List<ChildData> Children { get; set; }
 }
@@ -43,6 +43,7 @@ public class FirestoreManager : MonoBehaviour
 {
     public static FirestoreManager Instance { get; private set; }
     FirebaseFirestore db;
+    private bool firebaseReady = false;
 
     void Awake()
     {
@@ -53,20 +54,34 @@ public class FirestoreManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(this.gameObject);
-        db = FirebaseFirestore.DefaultInstance;
+
+        Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
+        {
+            var status = task.Result;
+            if (status == Firebase.DependencyStatus.Available)
+            {
+                db = FirebaseFirestore.DefaultInstance;
+                firebaseReady = true;
+            }
+            else
+            {
+                Debug.LogError("Firebase initialization failed: " + status);
+            }
+        });
     }
 
-    void Start() { db = FirebaseFirestore.DefaultInstance; }
 
     // Add a parent document
     public void AddParent(ParentData parent)
     {
+        if (!firebaseReady) { Debug.LogWarning("Firebase not ready!"); return; }
         db.Collection("parents").Document(parent.Name).SetAsync(parent);
     }
 
     // Add a child to a parent's subcollection
     public void AddChildToParent(string parentName, ChildData child)
     {
+        if (!firebaseReady) { Debug.LogWarning("Firebase not ready!"); return; }
         db.Collection("parents").Document(parentName)
             .Collection("children").Document(child.Name).SetAsync(child);
     }
@@ -74,6 +89,7 @@ public class FirestoreManager : MonoBehaviour
     // Add child independently (not under a parent)
     public void AddChild(ChildData child)
     {
+        if (!firebaseReady) { Debug.LogWarning("Firebase not ready!"); return; }
         db.Collection("children").Document(child.Name).SetAsync(child);
     }
 
@@ -113,5 +129,54 @@ public class FirestoreManager : MonoBehaviour
                 }
                 callback?.Invoke(childrenList);
             });
+    }
+
+    public void GetParent(string parentName, System.Action<ParentData> callback)
+    {
+        db.Collection("parents").Document(parentName).GetSnapshotAsync().ContinueWith(task =>
+        {
+            if (task.IsCompleted && !task.IsFaulted)
+            {
+                var doc = task.Result;
+                if (doc.Exists)
+                {
+                    var parent = doc.ConvertTo<ParentData>();
+                    callback?.Invoke(parent);
+                }
+                else
+                {
+                    callback?.Invoke(null);
+                }
+            }
+            else
+            {
+                callback?.Invoke(null);
+            }
+        });
+    }
+
+    public void GetChildOfParent(string parentName, string childName, System.Action<ChildData> callback)
+    {
+        db.Collection("parents").Document(parentName)
+            .Collection("children").Document(childName).GetSnapshotAsync().ContinueWith(task =>
+        {
+            if (task.IsCompleted && !task.IsFaulted)
+            {
+                var doc = task.Result;
+                if (doc.Exists)
+                {
+                    var child = doc.ConvertTo<ChildData>();
+                    callback?.Invoke(child);
+                }
+                else
+                {
+                    callback?.Invoke(null);
+                }
+            }
+            else
+            {
+                callback?.Invoke(null);
+            }
+        });
     }
 }

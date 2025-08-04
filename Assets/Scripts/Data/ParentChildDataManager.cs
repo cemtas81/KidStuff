@@ -34,6 +34,7 @@ public class ParentChildDataManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         firestoreManager = FirestoreManager.Instance;
+       
     }
 
     // Start or reset current parent
@@ -49,18 +50,22 @@ public class ParentChildDataManager : MonoBehaviour
     {
         if (_currentParent == null) StartNewParent();
         _currentParent.Name = name;
+        SaveParent(); // Save immediately after setting name
     }
 
     public void SetParentAge(int age)
     {
         if (_currentParent == null) StartNewParent();
         _currentParent.Age = age;
+        SaveParent(); // Save immediately after setting age
     }
 
-    public void SetParentGender(string gender)
+    public void SetParentGender(int gender)
     {
         if (_currentParent == null) StartNewParent();
         _currentParent.Gender = gender;
+        Debug.Log($"Parent gender set to: {gender}");
+        SaveParent();
     }
 
     // Save parent to Firestore
@@ -85,24 +90,29 @@ public class ParentChildDataManager : MonoBehaviour
     {
         if (_currentChild == null) StartNewChild();
         _currentChild.Name = name;
+        SaveChildToParent(); // Save immediately after setting name
     }
 
     public void SetChildAge(int age)
     {
         if (_currentChild == null) StartNewChild();
         _currentChild.Age = age;
+        SaveChildToParent(); // Save immediately after setting age
     }
 
-    public void SetChildGender(string gender)
+    public void SetChildGender(int gender)
     {
         if (_currentChild == null) StartNewChild();
         _currentChild.Gender = gender;
+        Debug.Log($"Child gender set to: {gender}");
+        SaveChildToParent();
     }
 
     public void SetChildHobbies(List<string> hobbies)
     {
         if (_currentChild == null) StartNewChild();
         _currentChild.Hobbies = hobbies;
+        SaveChildToParent(); // Save immediately after setting hobbies
     }
 
     // Save child under current parent in Firestore
@@ -112,7 +122,7 @@ public class ParentChildDataManager : MonoBehaviour
         {
             firestoreManager.AddChildToParent(_currentParent.Name, _currentChild);
             _currentParent.Children.Add(_currentChild);
-            _currentChild = null;
+            //_currentChild = null;
         }
     }
 
@@ -120,5 +130,23 @@ public class ParentChildDataManager : MonoBehaviour
     public void GetChildrenOfParent(string parentName, System.Action<List<ChildData>> callback)
     {
         firestoreManager.GetChildrenOfParent(parentName, callback);
+    }
+
+    public void LoadParentFromFirestore(string parentName, System.Action onLoaded = null)
+    {
+        firestoreManager.GetParent(parentName, parentData =>
+        {
+            _currentParent = parentData;
+            onLoaded?.Invoke();
+        });
+    }
+
+    public void LoadChildFromFirestore(string parentName, string childName, System.Action onLoaded = null)
+    {
+        firestoreManager.GetChildOfParent(parentName, childName, childData =>
+        {
+            _currentChild = childData;
+            onLoaded?.Invoke();
+        });
     }
 }

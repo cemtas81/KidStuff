@@ -11,7 +11,7 @@ public class ParentLoginUI : MonoBehaviour
     public TMP_InputField passwordInput;
     public Button loginButton;
     public TMP_Text feedbackText;
-
+    [SerializeField]GameObject ProfileEdit,logInScreen;
     private FirebaseAuth auth;
     private bool firebaseReady = false;
 
@@ -88,6 +88,9 @@ public class ParentLoginUI : MonoBehaviour
             }
             // Login successful, proceed to ParentHome scene
             //SceneManager.LoadScene(1);
+            logInScreen.SetActive(false);
+            ProfileEdit.SetActive(true);
+
         }, System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext());
     }
 

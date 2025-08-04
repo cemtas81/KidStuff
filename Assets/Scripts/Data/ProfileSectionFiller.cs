@@ -19,16 +19,25 @@ public class ProfileSectionFiller : MonoBehaviour
 
     void Start()
     {
-        //FillParentSection();
-        //FillChildSection();
-        StartCoroutine(RefreshProfileSections());
+        // Firestore'dan parent ve child verilerini çek
+        //ParentChildDataManager.Instance.LoadParentFromFirestore(ParentChildDataManager.Instance._currentParent.Name, () =>
+        //{
+        //    FillParentSection();
+        //    // Parent yüklendikten sonra child'ý da çekebilirsiniz
+        //    if (ParentChildDataManager.Instance.CurrentParent?.Children?.Count > 0)
+        //    {
+        //        var firstChildName = ParentChildDataManager.Instance.CurrentParent.Children[0].Name;
+        //        ParentChildDataManager.Instance.LoadChildFromFirestore(ParentChildDataManager.Instance._currentParent.Name, firstChildName, FillChildSection);
+        //    }
+        //});
+        //StartCoroutine(RefreshProfileSections());
     }
 
     IEnumerator RefreshProfileSections()
     {
         while (true)
         {
-            yield return new WaitForSeconds(1f); // Refresh every second
+            yield return new WaitForSeconds(.5f); // Refresh every second
             FillParentSection();
             FillChildSection();
         }
@@ -36,30 +45,41 @@ public class ProfileSectionFiller : MonoBehaviour
     void FillParentSection()
     {
         var parent = ParentChildDataManager.Instance.CurrentParent;
+        Debug.Log(parent != null ? $"Parent loaded: {parent.Name}" : "Parent is null!");
         if (parent != null)
         {
             parentNameInput.text = parent.Name;
             parentAgeInput.text = parent.Age.ToString();
-            int genderIndex = parentGenderDropdown.options.FindIndex(o => o.text == parent.Gender);
-            parentGenderDropdown.value = genderIndex >= 0 ? genderIndex : 0;
+            
+            // Dropdown deðerini ayarla ve görsel olarak güncelle
+            parentGenderDropdown.value = parent.Gender;
+            parentGenderDropdown.RefreshShownValue();
+            
+            Debug.Log($"Parent gender:{parent.Gender}");
         }
         else
         {
             parentNameInput.text = "";
             parentAgeInput.text = "";
-            parentGenderDropdown.value = 0;
+
+            parentGenderDropdown.value = 0; 
+            parentGenderDropdown.RefreshShownValue();
         }
     }
 
     void FillChildSection()
     {
         var child = ParentChildDataManager.Instance.CurrentChild;
+        Debug.Log(child != null ? $"Child loaded: {child.Name}" : "Child is null!");
         if (child != null)
         {
             childNameInput.text = child.Name;
             childAgeInput.text = child.Age.ToString();
-            int genderIndex = childGenderDropdown.options.FindIndex(o => o.text == child.Gender);
-            childGenderDropdown.value = genderIndex >= 0 ? genderIndex : 0;
+            
+            // Dropdown deðerini ayarla ve görsel olarak güncelle
+            childGenderDropdown.value = child.Gender;
+            childGenderDropdown.RefreshShownValue();
+            
             childHobbiesInput.text = child.Hobbies != null ? string.Join(", ", child.Hobbies) : "";
         }
         else
@@ -67,6 +87,7 @@ public class ProfileSectionFiller : MonoBehaviour
             childNameInput.text = "";
             childAgeInput.text = "";
             childGenderDropdown.value = 0;
+            childGenderDropdown.RefreshShownValue();
             childHobbiesInput.text = "";
         }
     }
