@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Eksik veri sýnýflarýný ekliyoruz
 [FirestoreData]
 public class ChildData
 {
@@ -11,7 +10,23 @@ public class ChildData
     public string Name { get; set; }
     [FirestoreProperty]
     public int Age { get; set; }
-    // Gerekirse baþka alanlar ekleyebilirsiniz
+    [FirestoreProperty]
+    public string Gender { get; set; }
+    [FirestoreProperty]
+    public List<string> Hobbies { get; set; }
+}
+
+[FirestoreData]
+public class ParentData
+{
+    [FirestoreProperty]
+    public string Name { get; set; }
+    [FirestoreProperty]
+    public int Age { get; set; }
+    [FirestoreProperty]
+    public string Gender { get; set; }
+    [FirestoreProperty]
+    public List<ChildData> Children { get; set; }
 }
 
 [FirestoreData]
@@ -26,12 +41,42 @@ public class ActivityData
 
 public class FirestoreManager : MonoBehaviour
 {
+    public static FirestoreManager Instance { get; private set; }
     FirebaseFirestore db;
+
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(this.gameObject);
+        db = FirebaseFirestore.DefaultInstance;
+    }
+
     void Start() { db = FirebaseFirestore.DefaultInstance; }
+
+    // Add a parent document
+    public void AddParent(ParentData parent)
+    {
+        db.Collection("parents").Document(parent.Name).SetAsync(parent);
+    }
+
+    // Add a child to a parent's subcollection
+    public void AddChildToParent(string parentName, ChildData child)
+    {
+        db.Collection("parents").Document(parentName)
+            .Collection("children").Document(child.Name).SetAsync(child);
+    }
+
+    // Add child independently (not under a parent)
     public void AddChild(ChildData child)
     {
-        db.Collection("children").AddAsync(child);
+        db.Collection("children").Document(child.Name).SetAsync(child);
     }
+
     public void GetActivities(Action<List<ActivityData>> callback)
     {
         db.Collection("activities").GetSnapshotAsync().ContinueWith(task =>
@@ -48,5 +93,25 @@ public class FirestoreManager : MonoBehaviour
             }
             callback?.Invoke(activityList);
         });
+    }
+
+    // Get all children of a parent
+    public void GetChildrenOfParent(string parentName, Action<List<ChildData>> callback)
+    {
+        db.Collection("parents").Document(parentName)
+            .Collection("children").GetSnapshotAsync().ContinueWith(task =>
+            {
+                var childrenList = new List<ChildData>();
+                if (task.IsCompleted && !task.IsFaulted)
+                {
+                    var snapshot = task.Result;
+                    foreach (var doc in snapshot.Documents)
+                    {
+                        var child = doc.ConvertTo<ChildData>();
+                        childrenList.Add(child);
+                    }
+                }
+                callback?.Invoke(childrenList);
+            });
     }
 }

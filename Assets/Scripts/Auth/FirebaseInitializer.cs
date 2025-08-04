@@ -28,8 +28,8 @@ public class FirebaseInitializer : MonoBehaviour
         string json = req.downloadHandler.text;
         string apiKey = JsonUtility.FromJson<ApiKeyResponse>(json).apiKey;
 
-        // LOGGING: Check what you actually received!
-        Debug.Log("API Key: " + apiKey);
+        //// LOGGING: Check what you actually received!
+        //Debug.Log("API Key: " + apiKey);
 
         AppOptions options = new AppOptions()
         {

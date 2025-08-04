@@ -22,9 +22,9 @@ public class ParentHomeManager : MonoBehaviour
     public TMP_Dropdown toolDropdown3;
     public TMP_Dropdown toolDropdown4;
 
-    public List<string> parents = new List<string> { "Parent 1", "Parent 2" };
-    public List<string> children = new List<string> { "Child 1", "Child 2", "Child 3" };
-    private List<Tool> tools = new List<Tool>();
+    public List<string> parents = new() { "Parent 1", "Parent 2" };
+    public List<string> children = new() { "Child 1", "Child 2", "Child 3" };
+    private List<Tool> tools = new();
 
     void Start()
     {

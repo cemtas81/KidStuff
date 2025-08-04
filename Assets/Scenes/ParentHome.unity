@@ -7011,7 +7011,7 @@ GameObject:
   - component: {fileID: 689302841}
   - component: {fileID: 689302840}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: GEnder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15098,7 +15098,7 @@ GameObject:
   - component: {fileID: 1384698401}
   - component: {fileID: 1384698400}
   m_Layer: 5
-  m_Name: name (3)
+  m_Name: Phone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18595,7 +18595,7 @@ GameObject:
   - component: {fileID: 1765084002}
   - component: {fileID: 1765084001}
   m_Layer: 5
-  m_Name: name (1)
+  m_Name: Age
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20714,6 +20714,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947216821}
   m_CullTransparentMesh: 1
+--- !u!1 &1988409568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1988409570}
+  - component: {fileID: 1988409569}
+  m_Layer: 0
+  m_Name: ProfileFiller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1988409569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988409568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea2b7cd5edffd14aade015050352306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentNameInput: {fileID: 1499442064}
+  parentAgeInput: {fileID: 257888728}
+  parentGenderDropdown: {fileID: 689302840}
+  childNameInput: {fileID: 2051121641}
+  childAgeInput: {fileID: 236955965}
+  childGenderDropdown: {fileID: 0}
+  childHobbiesInput: {fileID: 923295260}
+--- !u!4 &1988409570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988409568}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 528.1221, y: 1385.7101, z: 2.1268973}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1996636809
 GameObject:
   m_ObjectHideFlags: 0
@@ -22147,3 +22198,4 @@ SceneRoots:
   - {fileID: 1049939211}
   - {fileID: 1136898283}
   - {fileID: 902266842}
+  - {fileID: 1988409570}
