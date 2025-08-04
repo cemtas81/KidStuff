@@ -30,17 +30,16 @@ public class ProfileSectionFiller : MonoBehaviour
         //        ParentChildDataManager.Instance.LoadChildFromFirestore(ParentChildDataManager.Instance._currentParent.Name, firstChildName, FillChildSection);
         //    }
         //});
-        //StartCoroutine(RefreshProfileSections());
+        StartCoroutine(RefreshProfileSections());
     }
 
     IEnumerator RefreshProfileSections()
     {
-        while (true)
-        {
-            yield return new WaitForSeconds(.5f); // Refresh every second
-            FillParentSection();
-            FillChildSection();
-        }
+
+        yield return new WaitForSeconds(.5f); // Refresh every second
+        FillParentSection();
+        FillChildSection();
+
     }
     void FillParentSection()
     {
@@ -50,11 +49,11 @@ public class ProfileSectionFiller : MonoBehaviour
         {
             parentNameInput.text = parent.Name;
             parentAgeInput.text = parent.Age.ToString();
-            
+
             // Dropdown deðerini ayarla ve görsel olarak güncelle
             parentGenderDropdown.value = parent.Gender;
             parentGenderDropdown.RefreshShownValue();
-            
+
             Debug.Log($"Parent gender:{parent.Gender}");
         }
         else
@@ -62,7 +61,7 @@ public class ProfileSectionFiller : MonoBehaviour
             parentNameInput.text = "";
             parentAgeInput.text = "";
 
-            parentGenderDropdown.value = 0; 
+            parentGenderDropdown.value = 0;
             parentGenderDropdown.RefreshShownValue();
         }
     }
@@ -75,11 +74,11 @@ public class ProfileSectionFiller : MonoBehaviour
         {
             childNameInput.text = child.Name;
             childAgeInput.text = child.Age.ToString();
-            
+
             // Dropdown deðerini ayarla ve görsel olarak güncelle
             childGenderDropdown.value = child.Gender;
             childGenderDropdown.RefreshShownValue();
-            
+
             childHobbiesInput.text = child.Hobbies != null ? string.Join(", ", child.Hobbies) : "";
         }
         else
