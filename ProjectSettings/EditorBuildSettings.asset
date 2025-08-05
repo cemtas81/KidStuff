@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ChildLogin.unity
     guid: b8c1ba3d7c20e114bbd8469eaee747d7
   - enabled: 1
+    path: Assets/Scenes/ActivityScene.unity
+    guid: c91774b97fd684d45922b0ac03de472e
+  - enabled: 1
     path: Assets/Scenes/ActivityDetail.unity
     guid: e1eb19a2f42e7764ca6d3ad1053783b4
   - enabled: 1
