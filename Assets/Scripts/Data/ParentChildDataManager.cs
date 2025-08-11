@@ -10,6 +10,10 @@ public class ParentChildDataManager : MonoBehaviour
     private ParentData _currentParent;
     private ChildData _currentChild;
 
+    // Subscription management
+    private SubscriptionPlan _currentPlan = SubscriptionPlan.Free;
+    private bool _hasValidSubscription = false;
+
     // Public properties for global access
     public ParentData CurrentParent
     {
@@ -22,6 +26,9 @@ public class ParentChildDataManager : MonoBehaviour
         get { return _currentChild; }
         set { _currentChild = value; }
     }
+
+    public SubscriptionPlan CurrentPlan => _currentPlan;
+    public bool HasValidSubscription => _hasValidSubscription;
 
     void Awake()
     {
@@ -49,6 +56,9 @@ public class ParentChildDataManager : MonoBehaviour
         
         firestoreManager = FirestoreManager.Instance;
         Debug.Log("FirestoreManager initialized in ParentChildDataManager");
+        
+        // Load user's subscription data
+        LoadSubscriptionData();
     }
 
     // FirestoreManager'ýn hazýr olup olmadýðýný kontrol et
@@ -219,6 +229,72 @@ public class ParentChildDataManager : MonoBehaviour
         }
     }
 
+    // Activity access control based on subscription
+    public bool CanAccessActivity(ActivityData activity)
+    {
+        switch (_currentPlan)
+        {
+            case SubscriptionPlan.Free:
+                return activity.IsFreeActivity;
+            case SubscriptionPlan.Standard:
+            case SubscriptionPlan.Premium:
+                return true;
+            default:
+                return false;
+        }
+    }
+
+    public bool CanUseCamera()
+    {
+        return _currentPlan == SubscriptionPlan.Premium;
+    }
+
+    public bool CanAccessProgressTracking()
+    {
+        return _currentPlan != SubscriptionPlan.Free;
+    }
+
+    // Subscription management
+    public void LoadSubscriptionData()
+    {
+        if (!IsFirestoreReady()) return;
+        
+        // Load from Firebase Auth user data or Firestore
+        var userId = AuthManager.Instance?.CurrentUser?.UserId;
+        if (!string.IsNullOrEmpty(userId))
+        {
+            firestoreManager.GetUserSubscription(userId, subscriptionData =>
+            {
+                if (subscriptionData != null)
+                {
+                    _currentPlan = subscriptionData.Plan;
+                    _hasValidSubscription = subscriptionData.IsActive && subscriptionData.ExpiryDate > System.DateTime.Now;
+                }
+            });
+        }
+    }
+
+    public void UpdateSubscription(SubscriptionPlan newPlan)
+    {
+        _currentPlan = newPlan;
+        _hasValidSubscription = true;
+        
+        // Save to Firestore
+        var userId = AuthManager.Instance?.CurrentUser?.UserId;
+        if (!string.IsNullOrEmpty(userId) && IsFirestoreReady())
+        {
+            var subscriptionData = new SubscriptionData
+            {
+                Plan = newPlan,
+                IsActive = true,
+                StartDate = System.DateTime.Now,
+                ExpiryDate = System.DateTime.Now.AddMonths(1) // Default 1 month
+            };
+            
+            firestoreManager.UpdateUserSubscription(userId, subscriptionData);
+        }
+    }
+
     // Optionally, retrieve all children for a parent
     public void GetChildrenOfParent(string parentName, System.Action<List<ChildData>> callback)
     {
@@ -264,4 +340,73 @@ public class ParentChildDataManager : MonoBehaviour
             onLoaded?.Invoke();
         });
     }
+
+    // Voucher system
+    public void ApplyVoucher(string voucherCode, System.Action<bool, string> callback)
+    {
+        if (!IsFirestoreReady())
+        {
+            callback?.Invoke(false, "Firestore not ready");
+            return;
+        }
+
+        firestoreManager.ValidateVoucher(voucherCode, voucherData =>
+        {
+            if (voucherData != null && voucherData.IsValid && !voucherData.IsUsed)
+            {
+                // Apply voucher benefits
+                switch (voucherData.Type)
+                {
+                    case VoucherType.FreePremium:
+                        UpdateSubscription(SubscriptionPlan.Premium);
+                        break;
+                    case VoucherType.FreeStandard:
+                        UpdateSubscription(SubscriptionPlan.Standard);
+                        break;
+                }
+                
+                // Mark voucher as used
+                firestoreManager.MarkVoucherAsUsed(voucherCode);
+                callback?.Invoke(true, "Voucher applied successfully");
+            }
+            else
+            {
+                callback?.Invoke(false, "Invalid or expired voucher");
+            }
+        });
+    }
+}
+
+// Subscription related enums and classes
+public enum SubscriptionPlan
+{
+    Free = 0,
+    Standard = 1,
+    Premium = 2
+}
+
+[System.Serializable]
+public class SubscriptionData
+{
+    public SubscriptionPlan Plan;
+    public bool IsActive;
+    public System.DateTime StartDate;
+    public System.DateTime ExpiryDate;
+}
+
+public enum VoucherType
+{
+    FreePremium,
+    FreeStandard,
+    LifetimeFree
+}
+
+[System.Serializable]
+public class VoucherData
+{
+    public string Code;
+    public VoucherType Type;
+    public bool IsValid;
+    public bool IsUsed;
+    public System.DateTime ExpiryDate;
 }

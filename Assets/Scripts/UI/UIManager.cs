@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro; // Import TextMeshPro namespace
-using System.Collections.Generic;
 using System.Linq;
 
 public class UIManager : MonoBehaviour

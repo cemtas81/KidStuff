@@ -41,7 +41,7 @@ public class ProfileSectionFiller : MonoBehaviour
         FillChildSection();
 
     }
-    void FillParentSection()
+    public void FillParentSection()
     {
         var parent = ParentChildDataManager.Instance.CurrentParent;
         Debug.Log(parent != null ? $"Parent loaded: {parent.Name}" : "Parent is null!");
@@ -66,7 +66,7 @@ public class ProfileSectionFiller : MonoBehaviour
         }
     }
 
-    void FillChildSection()
+    public void FillChildSection()
     {
         var child = ParentChildDataManager.Instance.CurrentChild;
         Debug.Log(child != null ? $"Child loaded: {child.Name}" : "Child is null!");
