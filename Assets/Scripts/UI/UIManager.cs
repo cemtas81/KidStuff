@@ -61,6 +61,7 @@ public class UIManager : MonoBehaviour
             .Split(',')
             .Select(h => h.Trim())
             .Where(h => !string.IsNullOrEmpty(h))
+            .Distinct() // Ayný hobi birden fazla girilmiþse tekrarlarý önle
             .ToList();
         dataManager.SetChildHobbies(hobbies);
     }

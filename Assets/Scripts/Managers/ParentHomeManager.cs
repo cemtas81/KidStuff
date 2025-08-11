@@ -5,14 +5,6 @@ using TMPro;
 using System.IO;
 using UnityEngine.Networking;
 
-//[System.Serializable]
-//public class Tool
-//{
-//    public string id;
-//    public string nameKey;
-//    public string category;
-//}
-
 public class ParentHomeManager : MonoBehaviour
 {
     public TMP_Dropdown parentsDropdown;
@@ -22,13 +14,79 @@ public class ParentHomeManager : MonoBehaviour
     public TMP_Dropdown toolDropdown3;
     public TMP_Dropdown toolDropdown4;
 
-    public List<string> parents = new() { "Parent 1", "Parent 2" };
-    public List<string> children = new() { "Child 1", "Child 2", "Child 3" };
+    private List<string> parentNames = new();
+    private List<string> childNames = new();
     private List<Tool> tools = new();
+    private ParentChildDataManager dataManager;
 
     void Start()
     {
-        StartCoroutine(LoadToolsFromJsonCoroutine());
+        dataManager = ParentChildDataManager.Instance;
+        StartCoroutine(LoadDataAndPopulateDropdowns());
+    }
+
+    IEnumerator LoadDataAndPopulateDropdowns()
+    {
+        // FirestoreManager'ýn hazýr olmasýný bekle
+        while (FirestoreManager.Instance == null)
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
+
+        // Paralel olarak tools ve parent verilerini yükle
+        yield return StartCoroutine(LoadToolsFromJsonCoroutine());
+        yield return StartCoroutine(LoadParentsFromFirestore());
+        
+        // Ýlk parent seçiliyse onun children'larýný yükle
+        if (parentNames.Count > 0)
+        {
+            yield return StartCoroutine(LoadChildrenForParent(parentNames[0]));
+        }
+    }
+
+    IEnumerator LoadParentsFromFirestore()
+    {
+        bool isLoaded = false;
+        
+        // FirestoreManager'dan tüm parent'larý çekmek için GetAllParents metodunu kullan
+        FirestoreManager.Instance.GetAllParents(parents =>
+        {
+            parentNames.Clear();
+            foreach (var parent in parents)
+            {
+                if (!string.IsNullOrEmpty(parent.Name))
+                {
+                    parentNames.Add(parent.Name);
+                }
+            }
+            PopulateDropdown(parentsDropdown, parentNames);
+            isLoaded = true;
+            Debug.Log($"Loaded {parentNames.Count} parents from Firestore");
+        });
+
+        yield return new WaitUntil(() => isLoaded);
+    }
+
+    IEnumerator LoadChildrenForParent(string parentName)
+    {
+        bool isLoaded = false;
+        
+        dataManager.GetChildrenOfParent(parentName, children =>
+        {
+            childNames.Clear();
+            foreach (var child in children)
+            {
+                if (!string.IsNullOrEmpty(child.Name))
+                {
+                    childNames.Add(child.Name);
+                }
+            }
+            PopulateDropdown(childrenDropdown, childNames);
+            isLoaded = true;
+            Debug.Log($"Loaded {childNames.Count} children for parent: {parentName}");
+        });
+
+        yield return new WaitUntil(() => isLoaded);
     }
 
     IEnumerator LoadToolsFromJsonCoroutine()
@@ -37,19 +95,19 @@ public class ParentHomeManager : MonoBehaviour
         string json = null;
 
 #if UNITY_ANDROID && !UNITY_EDITOR
-    using (UnityWebRequest www = UnityWebRequest.Get(path))
-    {
-        yield return www.SendWebRequest();
-        if (www.result == UnityWebRequest.Result.Success)
+        using (UnityWebRequest www = UnityWebRequest.Get(path))
         {
-            json = www.downloadHandler.text;
+            yield return www.SendWebRequest();
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                json = www.downloadHandler.text;
+            }
+            else
+            {
+                Debug.LogError("Failed to load tools.json: " + www.error);
+                yield break;
+            }
         }
-        else
-        {
-            Debug.LogError("Failed to load tools.json: " + www.error);
-            yield break; // <--- This prevents the warning
-        }
-    }
 #else
         if (File.Exists(path))
         {
@@ -58,28 +116,70 @@ public class ParentHomeManager : MonoBehaviour
         else
         {
             Debug.LogError("tools.json not found at path: " + path);
-            yield break; // <--- This prevents the warning
+            yield break;
         }
 #endif
 
-        //if (!string.IsNullOrEmpty(json))
-        //{
-        //    tools = JsonHelper.FromJson<Tool>(json);
+        if (!string.IsNullOrEmpty(json))
+        {
+            // DropdownPopulator'daki JsonHelper'ý kullan
+            tools = DropdownJsonHelper.FromJson<Tool>(json);
 
-        //    PopulateDropdown(parentsDropdown, parents);
-        //    PopulateDropdown(childrenDropdown, children);
+            PopulateToolDropdown(toolDropdown1);
+            PopulateToolDropdown(toolDropdown2);
+            PopulateToolDropdown(toolDropdown3);
+            PopulateToolDropdown(toolDropdown4);
+            
+            Debug.Log($"Loaded {tools.Count} tools from JSON");
+        }
+    }
 
-        //    PopulateToolDropdown(toolDropdown1);
-        //    PopulateToolDropdown(toolDropdown2);
-        //    PopulateToolDropdown(toolDropdown3);
-        //    PopulateToolDropdown(toolDropdown4);
-        //}
+    // Parent seçimi deðiþtiðinde children'larý güncelle
+    public void OnParentSelectionChanged()
+    {
+        int selectedIndex = parentsDropdown.value;
+        if (selectedIndex >= 0 && selectedIndex < parentNames.Count)
+        {
+            string selectedParent = parentNames[selectedIndex];
+            StartCoroutine(LoadChildrenForParent(selectedParent));
+            
+            // Seçilen parent'ý current parent olarak ayarla
+            dataManager.LoadParentFromFirestore(selectedParent, () =>
+            {
+                Debug.Log($"Current parent set to: {selectedParent}");
+            });
+        }
+    }
 
-        yield break; // <--- Ensures all code paths return a value
+    // Child seçimi deðiþtiðinde current child'ý güncelle
+    public void OnChildSelectionChanged()
+    {
+        int selectedParentIndex = parentsDropdown.value;
+        int selectedChildIndex = childrenDropdown.value;
+        
+        if (selectedParentIndex >= 0 && selectedParentIndex < parentNames.Count &&
+            selectedChildIndex >= 0 && selectedChildIndex < childNames.Count)
+        {
+            string selectedParent = parentNames[selectedParentIndex];
+            string selectedChild = childNames[selectedChildIndex];
+            
+            dataManager.LoadChildFromFirestore(selectedParent, selectedChild, () =>
+            {
+                Debug.Log($"Current child set to: {selectedChild}");
+            });
+        }
+    }
+
+    // Refresh butonu için
+    public void RefreshDropdowns()
+    {
+        StartCoroutine(LoadDataAndPopulateDropdowns());
     }
 
     void PopulateDropdown(TMP_Dropdown dropdown, List<string> items)
     {
+        if (dropdown == null) return;
+        
         dropdown.options.Clear();
         foreach (string item in items)
         {
@@ -90,28 +190,33 @@ public class ParentHomeManager : MonoBehaviour
 
     void PopulateToolDropdown(TMP_Dropdown dropdown)
     {
+        if (dropdown == null) return;
+        
         dropdown.options.Clear();
         foreach (Tool tool in tools)
         {
-            dropdown.options.Add(new TMP_Dropdown.OptionData(tool.id));
+            // tool.id yerine direkt string kullan
+            string toolId = tool.id ?? "";
+            dropdown.options.Add(new TMP_Dropdown.OptionData(toolId));
         }
         dropdown.RefreshShownValue();
     }
 }
 
-// Helper to parse a JSON array with Unity's JsonUtility
-//public static class JsonHelper
-//{
-//    public static List<T> FromJson<T>(string json)
-//    {
-//        string newJson = "{ \"array\": " + json + "}";
-//        Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(newJson);
-//        return new List<T>(wrapper.array);
-//    }
+// Çakýþmayý önlemek için farklý bir isim kullan
+public static class DropdownJsonHelper
+{
+    public static List<T> FromJson<T>(string json)
+    {
+        string newJson = "{ \"items\": " + json + "}";
+        JsonWrapper<T> wrapper = JsonUtility.FromJson<JsonWrapper<T>>(newJson);
+        return new List<T>(wrapper.items);
+    }
 
-//    [System.Serializable]
-//    private class Wrapper<T>
-//    {
-//        public T[] array;
-//    }
-//}
+    [System.Serializable]
+    private class JsonWrapper<T>
+    {
+        public T[] items;
+    }
+
+}

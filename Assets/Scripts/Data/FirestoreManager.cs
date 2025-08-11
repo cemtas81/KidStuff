@@ -179,4 +179,38 @@ public class FirestoreManager : MonoBehaviour
             }
         });
     }
+    // FirestoreManager.cs'e eklenecek metod
+    public void GetAllParents(System.Action<List<ParentData>> callback)
+    {
+        if (!firebaseReady)
+        {
+            Debug.LogWarning("Firebase not ready!");
+            callback?.Invoke(new List<ParentData>());
+            return;
+        }
+
+        db.Collection("parents").GetSnapshotAsync().ContinueWith(task =>
+        {
+            var parentsList = new List<ParentData>();
+            if (task.IsCompleted && !task.IsFaulted)
+            {
+                var snapshot = task.Result;
+                foreach (var doc in snapshot.Documents)
+                {
+                    if (doc.Exists)
+                    {
+                        var parent = doc.ConvertTo<ParentData>();
+                        parentsList.Add(parent);
+                    }
+                }
+            }
+            else
+            {
+                Debug.LogError("Failed to get parents from Firestore: " + task.Exception?.Message);
+            }
+
+            // Ana thread'de callback'i çaðýr
+            callback?.Invoke(parentsList);
+        });
+    }
 }

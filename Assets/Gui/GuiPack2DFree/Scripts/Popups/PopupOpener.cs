@@ -8,7 +8,7 @@ namespace GUIPack2DFree
 
         public void OpenPopup()
         {
-            var screen = FindObjectOfType<PopupSystem>();
+            var screen = FindFirstObjectByType<PopupSystem>();
 
             AudioManager.Instance.PlayEffects(AudioManager.Instance.buttonClick);
             screen.OpenPopup(Popup);
