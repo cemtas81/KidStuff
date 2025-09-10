@@ -104,7 +104,7 @@ public class FirestoreManager : MonoBehaviour
 {
     public static FirestoreManager Instance { get; private set; }
     FirebaseFirestore db;
-    private bool firebaseReady = false;
+    public bool firebaseReady = false;
 
     void Awake()
     {
@@ -129,6 +129,60 @@ public class FirestoreManager : MonoBehaviour
             {
                 Debug.LogError("Firebase initialization failed: " + status);
             }
+        });
+    }
+
+    // === UID tabanlý Parent (Merge ile yaz) ===
+    public void AddOrUpdateParent(string userId, ParentData parent)
+    {
+        if (!firebaseReady) { Debug.LogWarning("Firebase not ready!"); return; }
+        db.Collection("parents")
+          .Document(userId)
+          .SetAsync(parent, SetOptions.MergeAll);
+    }
+
+    public void GetParentByUserId(string userId, Action<ParentData> callback)
+    {
+        if (!firebaseReady) { callback?.Invoke(null); return; }
+        db.Collection("parents").Document(userId).GetSnapshotAsync().ContinueWith(task =>
+        {
+            if (task.IsCompleted && !task.IsFaulted)
+            {
+                var doc = task.Result;
+                if (doc.Exists)
+                    callback?.Invoke(doc.ConvertTo<ParentData>());
+                else
+                    callback?.Invoke(null);
+            }
+            else
+            {
+                callback?.Invoke(null);
+            }
+        });
+    }
+
+    // === UID tabanlý Child ===
+    public void AddChildToParentByUserId(string userId, ChildData child)
+    {
+        if (!firebaseReady) { Debug.LogWarning("Firebase not ready!"); return; }
+        db.Collection("parents").Document(userId)
+          .Collection("children").Document(child.Name)
+          .SetAsync(child, SetOptions.MergeAll);
+    }
+
+    public void GetChildrenOfParentByUserId(string userId, Action<List<ChildData>> callback)
+    {
+        if (!firebaseReady) { callback?.Invoke(new List<ChildData>()); return; }
+        db.Collection("parents").Document(userId)
+          .Collection("children").GetSnapshotAsync().ContinueWith(task =>
+        {
+            var list = new List<ChildData>();
+            if (task.IsCompleted && !task.IsFaulted)
+            {
+                foreach (var doc in task.Result.Documents)
+                    list.Add(doc.ConvertTo<ChildData>());
+            }
+            callback?.Invoke(list);
         });
     }
 

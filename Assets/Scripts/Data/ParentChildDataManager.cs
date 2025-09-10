@@ -1,265 +1,234 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using Firebase.Auth;
 
 public class ParentChildDataManager : MonoBehaviour
 {
     public static ParentChildDataManager Instance { get; private set; }
 
     private FirestoreManager firestoreManager;
-    private ParentData _currentParent;
-    private ChildData _currentChild;
+    private string _parentDocId; // UID
+    public ParentData CurrentParent { get; private set; }
+    public ChildData CurrentChild { get; private set; }
 
-    // Subscription management
     private SubscriptionPlan _currentPlan = SubscriptionPlan.Free;
     private bool _hasValidSubscription = false;
-
-    // Public properties for global access
-    public ParentData CurrentParent
-    {
-        get { return _currentParent; }
-        set { _currentParent = value; }
-    }
-
-    public ChildData CurrentChild
-    {
-        get { return _currentChild; }
-        set { _currentChild = value; }
-    }
-
     public SubscriptionPlan CurrentPlan => _currentPlan;
     public bool HasValidSubscription => _hasValidSubscription;
 
     void Awake()
     {
-        // Singleton pattern for global access
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        if (transform.parent == null) DontDestroyOnLoad(gameObject);
 
-        // FirestoreManager'ýn hazýr olmasýný bekle
         StartCoroutine(InitializeFirestoreManager());
+        StartCoroutine(SubscribeAndAutoLoad());
     }
 
     IEnumerator InitializeFirestoreManager()
     {
-        // FirestoreManager'ýn instance'ýnýn hazýr olmasýný bekle
-        while (FirestoreManager.Instance == null)
-        {
-            Debug.LogWarning("Waiting for FirestoreManager.Instance...");
-            yield return new WaitForSeconds(0.1f);
-        }
-        
+        while (FirestoreManager.Instance == null) yield return new WaitForSeconds(0.1f);
         firestoreManager = FirestoreManager.Instance;
-        Debug.Log("FirestoreManager initialized in ParentChildDataManager");
-        
-        // Load user's subscription data
         LoadSubscriptionData();
     }
 
-    // FirestoreManager'ýn hazýr olup olmadýðýný kontrol et
-    private bool IsFirestoreReady()
+    private IEnumerator SubscribeAndAutoLoad()
     {
-        if (firestoreManager == null)
+        while (AuthManager.Instance == null) yield return null;
+        AuthManager.Instance.OnUserLoggedIn += OnUserLoggedIn;
+
+        while (!IsFirestoreReady()) yield return null;
+
+        if (AuthManager.Instance.CurrentUser != null)
+            yield return TryLoadForCurrentUser();
+    }
+
+    void OnDestroy()
+    {
+        if (AuthManager.Instance != null)
+            AuthManager.Instance.OnUserLoggedIn -= OnUserLoggedIn;
+    }
+
+    private void OnUserLoggedIn(FirebaseUser user)
+    {
+        StartCoroutine(TryLoadForCurrentUser());
+        // Kullanýcý geldiðinde bekleyen parent/child yazýmlarýný da tetikleyelim
+        if (CurrentParent != null)
+            StartCoroutine(SaveParentWhenReadyIncludingAuth());
+        if (CurrentChild != null)
+            StartCoroutine(SaveChildWhenReadyIncludingAuth(CurrentChild));
+    }
+
+    private IEnumerator TryLoadForCurrentUser()
+    {
+        while (!IsFirestoreReady()) yield return null;
+
+        var user = AuthManager.Instance?.CurrentUser;
+        if (user == null) yield break;
+
+        _parentDocId = user.UserId; // DOC ID = UID
+
+        bool done = false;
+        LoadParentAndChildrenByUserId(_parentDocId, _ => done = true);
+        while (!done) yield return null;
+
+        // Otomatik varsayýlan oluþturma YOK.
+    }
+
+    private bool IsFirestoreReady() => firestoreManager != null && firestoreManager.firebaseReady;
+
+    public void ClearCurrentData()
+    {
+        CurrentParent = null;
+        CurrentChild = null;
+        _currentPlan = SubscriptionPlan.Free;
+        _hasValidSubscription = false;
+        _parentDocId = null;
+    }
+
+    // === UID tabanlý yükleme ===
+    private void LoadParentAndChildrenByUserId(string userId, System.Action<bool> onLoaded)
+    {
+        if (!IsFirestoreReady()) { onLoaded?.Invoke(false); return; }
+
+        firestoreManager.GetParentByUserId(userId, parent =>
         {
-            Debug.LogWarning("FirestoreManager is not ready yet. Operation skipped.");
-            return false;
+            CurrentParent = parent;
+            if (parent == null) { onLoaded?.Invoke(false); return; }
+
+            firestoreManager.GetChildrenOfParentByUserId(userId, children =>
+            {
+                CurrentParent.Children = children;
+                CurrentChild = (children != null && children.Count > 0) ? children[0] : null;
+                onLoaded?.Invoke(true);
+            });
+        });
+    }
+
+    // Geriye dönük API: varsa UID ile çaðýr
+    public void LoadParentAndChildren(string parentName, System.Action<bool> onLoaded)
+    {
+        if (!string.IsNullOrEmpty(_parentDocId))
+            LoadParentAndChildrenByUserId(_parentDocId, onLoaded);
+        else
+            onLoaded?.Invoke(false);
+    }
+
+    // KAYDETME: Auth ve Firestore hazýr olana kadar bekleyip sonra yaz
+    public void SaveParent()
+    {
+        if (CurrentParent == null) return;
+        StartCoroutine(SaveParentWhenReadyIncludingAuth());
+    }
+
+    private IEnumerator SaveParentWhenReadyIncludingAuth()
+    {
+        // AuthManager ve kullanýcýyý bekle
+        while (AuthManager.Instance == null || AuthManager.Instance.CurrentUser == null)
+            yield return null;
+
+        // Firestore'u bekle
+        while (!IsFirestoreReady())
+            yield return null;
+
+        var user = AuthManager.Instance.CurrentUser;
+        _parentDocId = user.UserId;
+        CurrentParent.Email = user.Email;
+
+        firestoreManager.AddOrUpdateParent(_parentDocId, CurrentParent);
+    }
+
+    public void SaveOrUpdateChild(ChildData child)
+    {
+        if (child == null || string.IsNullOrEmpty(child.Name)) return;
+
+        // Yerel modele yaz
+        if (CurrentParent != null)
+        {
+            if (CurrentParent.Children == null) CurrentParent.Children = new List<ChildData>();
+            var idx = CurrentParent.Children.FindIndex(c => c.Name == child.Name);
+            if (idx >= 0) CurrentParent.Children[idx] = child;
+            else CurrentParent.Children.Add(child);
         }
-        return true;
+        CurrentChild = child;
+
+        // Kalýcý yazýmý kuyrukla
+        StartCoroutine(SaveChildWhenReadyIncludingAuth(child));
     }
 
-    // Start or reset current parent
-    public void StartNewParent()
+    private IEnumerator SaveChildWhenReadyIncludingAuth(ChildData child)
     {
-        _currentParent = new ParentData
-        {
-            Children = new List<ChildData>()
-        };
+        if (child == null || string.IsNullOrEmpty(child.Name)) yield break;
+
+        // Auth ve Firestore hazýr olana kadar bekle
+        while (AuthManager.Instance == null || AuthManager.Instance.CurrentUser == null)
+            yield return null;
+        while (!IsFirestoreReady())
+            yield return null;
+
+        var user = AuthManager.Instance.CurrentUser;
+        firestoreManager.AddChildToParentByUserId(user.UserId, child);
     }
 
+    // UI set’leri – sadece alanlarý günceller; kalýcý yazým yukarýda kuyrukla
     public void SetParentName(string name)
     {
-        if (_currentParent == null) StartNewParent();
-        _currentParent.Name = name;
-        SaveParent(); // Save immediately after setting name
+        if (CurrentParent == null) CurrentParent = new ParentData { Children = new List<ChildData>() };
+        CurrentParent.Name = name;
+        SaveParent();
     }
 
     public void SetParentAge(int age)
     {
-        if (_currentParent == null) StartNewParent();
-        _currentParent.Age = age;
-        SaveParent(); // Save immediately after setting age
+        if (CurrentParent == null) CurrentParent = new ParentData { Children = new List<ChildData>() };
+        CurrentParent.Age = age;
+        SaveParent();
     }
 
     public void SetParentGender(int gender)
     {
-        if (_currentParent == null) StartNewParent();
-        _currentParent.Gender = gender;
-        Debug.Log($"Parent gender set to: {gender}");
+        if (CurrentParent == null) CurrentParent = new ParentData { Children = new List<ChildData>() };
+        CurrentParent.Gender = gender;
         SaveParent();
-    }
-
-    // Save parent to Firestore
-    public void SaveParent()
-    {
-        // Null kontrollerini ekle
-        if (_currentParent == null)
-        {
-            Debug.LogWarning("Cannot save parent: _currentParent is null");
-            return;
-        }
-
-        if (string.IsNullOrEmpty(_currentParent.Name))
-        {
-            Debug.LogWarning("Cannot save parent: Parent name is empty");
-            return;
-        }
-
-        if (!IsFirestoreReady())
-        {
-            Debug.LogWarning("Cannot save parent: FirestoreManager not ready");
-            return;
-        }
-
-        try
-        {
-            firestoreManager.AddParent(_currentParent);
-            Debug.Log($"Parent saved: {_currentParent.Name}");
-        }
-        catch (System.Exception e)
-        {
-            Debug.LogError($"Error saving parent: {e.Message}");
-        }
-    }
-
-    // Child methods
-    public void StartNewChild()
-    {
-        _currentChild = new ChildData
-        {
-            Hobbies = new List<string>()
-        };
     }
 
     public void SetChildName(string name)
     {
-        if (_currentChild == null) StartNewChild();
-        _currentChild.Name = name;
-        SaveChildToParent(); // Save immediately after setting name
+        if (CurrentChild == null) CurrentChild = new ChildData { Hobbies = new List<string>() };
+        CurrentChild.Name = name;
+        SaveOrUpdateChild(CurrentChild);
     }
 
     public void SetChildAge(int age)
     {
-        if (_currentChild == null) StartNewChild();
-        _currentChild.Age = age;
-        SaveChildToParent(); // Save immediately after setting age
+        if (CurrentChild == null) CurrentChild = new ChildData { Hobbies = new List<string>() };
+        CurrentChild.Age = age;
+        SaveOrUpdateChild(CurrentChild);
     }
 
     public void SetChildGender(int gender)
     {
-        if (_currentChild == null) StartNewChild();
-        _currentChild.Gender = gender;
-        Debug.Log($"Child gender set to: {gender}");
-        SaveChildToParent();
+        if (CurrentChild == null) CurrentChild = new ChildData { Hobbies = new List<string>() };
+        CurrentChild.Gender = gender;
+        SaveOrUpdateChild(CurrentChild);
     }
 
     public void SetChildHobbies(List<string> hobbies)
     {
-        if (_currentChild == null) StartNewChild();
-        _currentChild.Hobbies = hobbies;
-        SaveChildToParent(); // Save immediately after setting hobbies
+        if (CurrentChild == null) CurrentChild = new ChildData { Hobbies = new List<string>() };
+        CurrentChild.Hobbies = hobbies;
+        SaveOrUpdateChild(CurrentChild);
     }
 
-    // Save child under current parent in Firestore
-    public void SaveChildToParent()
-    {
-        if (_currentParent == null)
-        {
-            Debug.LogWarning("Cannot save child: _currentParent is null");
-            return;
-        }
-
-        if (_currentChild == null)
-        {
-            Debug.LogWarning("Cannot save child: _currentChild is null");
-            return;
-        }
-
-        if (string.IsNullOrEmpty(_currentParent.Name) || string.IsNullOrEmpty(_currentChild.Name))
-        {
-            Debug.LogWarning("Cannot save child: Parent or Child name is empty");
-            return;
-        }
-
-        if (!IsFirestoreReady())
-        {
-            Debug.LogWarning("Cannot save child: FirestoreManager not ready");
-            return;
-        }
-
-        try
-        {
-            firestoreManager.AddChildToParent(_currentParent.Name, _currentChild);
-            
-            // Parent'ýn children listesine ekle (eðer yoksa)
-            if (_currentParent.Children == null)
-                _currentParent.Children = new List<ChildData>();
-                
-            // Ayný isimde child varsa güncelle, yoksa ekle
-            var existingChild = _currentParent.Children.Find(c => c.Name == _currentChild.Name);
-            if (existingChild == null)
-            {
-                _currentParent.Children.Add(_currentChild);
-            }
-            else
-            {
-                var index = _currentParent.Children.IndexOf(existingChild);
-                _currentParent.Children[index] = _currentChild;
-            }
-            
-            Debug.Log($"Child saved: {_currentChild.Name}");
-        }
-        catch (System.Exception e)
-        {
-            Debug.LogError($"Error saving child: {e.Message}");
-        }
-    }
-
-    // Activity access control based on subscription
-    public bool CanAccessActivity(ActivityData activity)
-    {
-        switch (_currentPlan)
-        {
-            case SubscriptionPlan.Free:
-                return activity.IsFreeActivity;
-            case SubscriptionPlan.Standard:
-            case SubscriptionPlan.Premium:
-                return true;
-            default:
-                return false;
-        }
-    }
-
-    public bool CanUseCamera()
-    {
-        return _currentPlan == SubscriptionPlan.Premium;
-    }
-
-    public bool CanAccessProgressTracking()
-    {
-        return _currentPlan != SubscriptionPlan.Free;
-    }
-
-    // Subscription management
     public void LoadSubscriptionData()
     {
         if (!IsFirestoreReady()) return;
-        
-        // Load from Firebase Auth user data or Firestore
         var userId = AuthManager.Instance?.CurrentUser?.UserId;
         if (!string.IsNullOrEmpty(userId))
         {
@@ -278,8 +247,6 @@ public class ParentChildDataManager : MonoBehaviour
     {
         _currentPlan = newPlan;
         _hasValidSubscription = true;
-        
-        // Save to Firestore
         var userId = AuthManager.Instance?.CurrentUser?.UserId;
         if (!string.IsNullOrEmpty(userId) && IsFirestoreReady())
         {
@@ -288,84 +255,30 @@ public class ParentChildDataManager : MonoBehaviour
                 Plan = newPlan,
                 IsActive = true,
                 StartDate = System.DateTime.Now,
-                ExpiryDate = System.DateTime.Now.AddMonths(1) // Default 1 month
+                ExpiryDate = System.DateTime.Now.AddMonths(1)
             };
-            
             firestoreManager.UpdateUserSubscription(userId, subscriptionData);
         }
     }
 
-    // Optionally, retrieve all children for a parent
-    public void GetChildrenOfParent(string parentName, System.Action<List<ChildData>> callback)
-    {
-        if (!IsFirestoreReady())
-        {
-            callback?.Invoke(new List<ChildData>());
-            return;
-        }
+    public bool CanAccessActivity(ActivityData activity) =>
+        _currentPlan == SubscriptionPlan.Free ? activity.IsFreeActivity : true;
 
-        firestoreManager.GetChildrenOfParent(parentName, callback);
-    }
+    public bool CanUseCamera() => _currentPlan == SubscriptionPlan.Premium;
+    public bool CanAccessProgressTracking() => _currentPlan != SubscriptionPlan.Free;
 
-    public void LoadParentFromFirestore(string parentName, System.Action onLoaded = null)
-    {
-        if (!IsFirestoreReady())
-        {
-            Debug.LogWarning("Cannot load parent: FirestoreManager not ready");
-            onLoaded?.Invoke();
-            return;
-        }
-
-        firestoreManager.GetParent(parentName, parentData =>
-        {
-            _currentParent = parentData;
-            Debug.Log(parentData != null ? $"Parent loaded: {parentData.Name}" : "Parent not found");
-            onLoaded?.Invoke();
-        });
-    }
-
-    public void LoadChildFromFirestore(string parentName, string childName, System.Action onLoaded = null)
-    {
-        if (!IsFirestoreReady())
-        {
-            Debug.LogWarning("Cannot load child: FirestoreManager not ready");
-            onLoaded?.Invoke();
-            return;
-        }
-
-        firestoreManager.GetChildOfParent(parentName, childName, childData =>
-        {
-            _currentChild = childData;
-            Debug.Log(childData != null ? $"Child loaded: {childData.Name}" : "Child not found");
-            onLoaded?.Invoke();
-        });
-    }
-
-    // Voucher system
     public void ApplyVoucher(string voucherCode, System.Action<bool, string> callback)
     {
-        if (!IsFirestoreReady())
-        {
-            callback?.Invoke(false, "Firestore not ready");
-            return;
-        }
-
+        if (!IsFirestoreReady()) { callback?.Invoke(false, "Firestore not ready"); return; }
         firestoreManager.ValidateVoucher(voucherCode, voucherData =>
         {
             if (voucherData != null && voucherData.IsValid && !voucherData.IsUsed)
             {
-                // Apply voucher benefits
                 switch (voucherData.Type)
                 {
-                    case VoucherType.FreePremium:
-                        UpdateSubscription(SubscriptionPlan.Premium);
-                        break;
-                    case VoucherType.FreeStandard:
-                        UpdateSubscription(SubscriptionPlan.Standard);
-                        break;
+                    case VoucherType.FreePremium: UpdateSubscription(SubscriptionPlan.Premium); break;
+                    case VoucherType.FreeStandard: UpdateSubscription(SubscriptionPlan.Standard); break;
                 }
-                
-                // Mark voucher as used
                 firestoreManager.MarkVoucherAsUsed(voucherCode);
                 callback?.Invoke(true, "Voucher applied successfully");
             }
@@ -377,7 +290,6 @@ public class ParentChildDataManager : MonoBehaviour
     }
 }
 
-// Subscription related enums and classes
 public enum SubscriptionPlan
 {
     Free = 0,

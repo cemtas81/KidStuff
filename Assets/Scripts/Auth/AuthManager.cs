@@ -18,29 +18,52 @@ public class AuthManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        
-        auth = FirebaseAuth.DefaultInstance;
-        // Mevcut oturum kontrolü
-        if (auth.CurrentUser != null)
-        {
-            OnUserLoggedIn?.Invoke(auth.CurrentUser);
-        }
+
+        Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task => {
+            if (task.Result == Firebase.DependencyStatus.Available)
+            {
+                auth = FirebaseAuth.DefaultInstance;
+                if (auth.CurrentUser != null)
+                {
+                    // Sadece event tetikle. Email tabanlý yükleme/oluþturma YOK.
+                    OnUserLoggedIn?.Invoke(auth.CurrentUser);
+                }
+            }
+            else
+            {
+                Debug.LogError("Firebase Auth initialization failed: " + task.Result);
+            }
+        });
     }
 
     public void Register(string email, string password, Action<FirebaseUser, string> callback)
     {
+        if (auth == null)
+        {
+            callback?.Invoke(null, "Firebase Auth not ready");
+            return;
+        }
+
         auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWith(task => {
             if (task.IsCanceled || task.IsFaulted)
             {
                 callback?.Invoke(null, task.Exception?.Message ?? "Bilinmeyen hata");
                 return;
             }
-            callback?.Invoke(task.Result.User, null);
+            var user = task.Result.User;
+            OnUserLoggedIn?.Invoke(user); // Sadece event
+            callback?.Invoke(user, null);
         });
     }
 
     public void Login(string email, string password, Action<FirebaseUser, string> callback)
     {
+        if (auth == null)
+        {
+            callback?.Invoke(null, "Firebase Auth not ready");
+            return;
+        }
+
         auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWith(task => {
             if (task.IsCanceled || task.IsFaulted)
             {
@@ -48,13 +71,17 @@ public class AuthManager : MonoBehaviour
                 return;
             }
             var user = task.Result.User;
-            OnUserLoggedIn?.Invoke(user);
+            OnUserLoggedIn?.Invoke(user); // Sadece event
             callback?.Invoke(user, null);
         });
     }
-    
+
     public void Logout()
     {
-        auth.SignOut();
+        auth?.SignOut();
+        if (ParentChildDataManager.Instance != null)
+        {
+            ParentChildDataManager.Instance.ClearCurrentData();
+        }
     }
 }

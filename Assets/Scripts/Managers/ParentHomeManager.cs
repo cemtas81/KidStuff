@@ -71,20 +71,20 @@ public class ParentHomeManager : MonoBehaviour
     {
         bool isLoaded = false;
         
-        dataManager.GetChildrenOfParent(parentName, children =>
-        {
-            childNames.Clear();
-            foreach (var child in children)
-            {
-                if (!string.IsNullOrEmpty(child.Name))
-                {
-                    childNames.Add(child.Name);
-                }
-            }
-            PopulateDropdown(childrenDropdown, childNames);
-            isLoaded = true;
-            Debug.Log($"Loaded {childNames.Count} children for parent: {parentName}");
-        });
+        //dataManager.GetChildrenOfParent(parentName, children =>
+        //{
+        //    childNames.Clear();
+        //    foreach (var child in children)
+        //    {
+        //        if (!string.IsNullOrEmpty(child.Name))
+        //        {
+        //            childNames.Add(child.Name);
+        //        }
+        //    }
+        //    PopulateDropdown(childrenDropdown, childNames);
+        //    isLoaded = true;
+        //    Debug.Log($"Loaded {childNames.Count} children for parent: {parentName}");
+        //});
 
         yield return new WaitUntil(() => isLoaded);
     }
@@ -144,10 +144,10 @@ public class ParentHomeManager : MonoBehaviour
             StartCoroutine(LoadChildrenForParent(selectedParent));
             
             // Seçilen parent'ý current parent olarak ayarla
-            dataManager.LoadParentFromFirestore(selectedParent, () =>
-            {
-                Debug.Log($"Current parent set to: {selectedParent}");
-            });
+            //dataManager.LoadParentFromFirestore(selectedParent, () =>
+            //{
+            //    Debug.Log($"Current parent set to: {selectedParent}");
+            //});
         }
     }
 
@@ -163,10 +163,10 @@ public class ParentHomeManager : MonoBehaviour
             string selectedParent = parentNames[selectedParentIndex];
             string selectedChild = childNames[selectedChildIndex];
             
-            dataManager.LoadChildFromFirestore(selectedParent, selectedChild, () =>
-            {
-                Debug.Log($"Current child set to: {selectedChild}");
-            });
+            //dataManager.LoadChildFromFirestore(selectedParent, selectedChild, () =>
+            //{
+            //    Debug.Log($"Current child set to: {selectedChild}");
+            //});
         }
     }
 
